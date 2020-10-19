@@ -35,7 +35,7 @@ function displayProjects() {
   if (projects == null || projects == undefined) {
     projects = [];
   }
-
+  
   teamsPlaceholder = "";
   console.log(teams)
     for(i=0;i < teams.length; ++i){
@@ -102,9 +102,8 @@ function addProject() {
     JSON.stringify(newProject)
   );
 
-  // #####[ BANKOLE AYODEJI POPULATING THE USERS OBJECT WITH ITS PROJECT ] ######
-  users[currentUser.id].projects.push(newProject.projectId)
-  localStorage.setItem('users', JSON.stringify(users))
+  users[currentUser.id].projects.push(newProject.projectId);
+  localStorage.setItem('users', JSON.stringify(users));
   location.href = "temp.html";
 }
 
@@ -113,6 +112,8 @@ function openProject(id) {
   localStorage.setItem("currentProject", JSON.stringify(projects[id]));
 
   location.href = "taskoverview.html";
+
+  
 }
 
 function displayName(params) {}

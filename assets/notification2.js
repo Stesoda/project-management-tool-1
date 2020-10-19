@@ -1,3 +1,4 @@
+
 // displayProject
 let project = [
     {

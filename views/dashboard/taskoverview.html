@@ -18,14 +18,14 @@
     <link rel="stylesheet" href="../../assets/css/task.css">
     <link rel="stylesheet" href="../../assets/css/styleTask.css">
 
-    <script src="../../assets/js/auth/auth.js"></script>
+    <link src="../../assets/js/auth/auth.js"></link>
 
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link src="https://kit.fontawesome.com/b99e675b6e.js"></link>
 
     <title>Bascom || Task Overview</title>
   </head>
 
-    <body>
+    <body onload="displayTasksLists()">
       <!-- ############### [ MODAL FOR TO ADD TASK ] ########################-->
       <div
       class="modal fade addProject"
@@ -99,50 +99,6 @@
       </div>
     </div>
     <!-- ###############[ MODAL END ]########################################## -->
-
-     <!-- ###############[ MODAL to invite team ]########################################## -->
-  
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <!--  modal header -->
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Invite Team</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-       <!--  modal body -->
-      <div class="modal-body">
-        
-        
-        <div id="showSelected" style="border: 1px solid black;  margin-bottom: 10px;">
-          selected user appears here!
-      </div>
-      <p></p>
-      <input type="text" id="teamName" placeholder="Enter Team Name">
-      <p></p>
-      <button onclick="createTeam()">Create Team</button>
-      <p></p>
-      <div>
-          <select multiple style="height: 20vh; width: 25vw; font-size: 1.2rem;" name="users" id="usersList">
-              <option id ="1" onclick="addUp(event)" value="abuja">Abuja</option>
-              <option id ="2" onclick="addUp(event)" value="ogun">Ogun</option>
-              <option id ="3" onclick="addUp(event)" value="lokoja">Lokoja</option>
-              <option id ="4" onclick="addUp(event)" value="benin">Abuja</option>
-              <option id ="5" onclick="addUp(event)" value="lagos">Lagos</option>
-          </select>
-      </div>
-      </div>
-       <!--  modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
- <!-- ------------------------------------- --[ MODAL TO INVITE TEAM ENDS HERE] ------------------------------------- -- -->
       
     <!-- ###########################[ NAVBAR BEGINS HERE] ############################################# -->
       <nav class="navbar navbar-light bg-light flex-md-nowrap fixed-top  p-0 shadow-sm">
@@ -224,7 +180,7 @@
                   <a class="nav-link text-white hover-color active" href="taskoverview.html"><i class="fas fa-tasks"></i>Tasks</a>
                 </li>
                 <li class="nav-item hover-color">
-                  <a class="nav-link text-white " href="#"><i class="fas fa-bell"></i>Notification</a>
+                  <a class="nav-link text-white " href="/notification.html"><i class="fas fa-bell"></i>Notification</a>
                 </li>
                 
               </ul>
@@ -261,18 +217,9 @@
                 </div>
             </div>
               <!-- invite team -->
-            <!-- <div class="fixed-bottom">
+            <div class="fixed-bottom">
               <button type="button" class="btn btn-outline-light   btn-lg  mx-3 my-3">Invite Teams</button>
-            </div> -->
-
-
- <!-- ------------------------------------[ MODAL TO INVITE TEAM] ------------------------------------- -->
-             <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="displayUsers()">
-  Invite Team
-</button>
-
-
+            </div>
         
           </div>
               <!-- ###########################[ SIDEBAR ENDS HERE] ############################################# -->
@@ -281,13 +228,53 @@
           <div class="mt-5"></div>
             <div  class="container pt-5 mt-5">
               <section class="container">
-                
 
-                  <div id="addTodoListDiv">
+                <!-- <input class="mt-3 d-flex flex-row justify-content-end" type="text" id="listName"><button onclick="addList()">Add list</button>
+                <div class="card-deck d-flex justify-content-around mt-4" id="showLists"> -->
+
+                  <input type="text" id="listName"><button onclick="addList()">Add list</button>
+                  <div class="card-deck d-flex justify-content-around mt-4" id="showLists">
+
+                  <!-- <div id="addTodoListDiv">
                     <input id="addTodoListInput" class="comment">
                     <button id="addTodoListButton" style="background-color: #0099cc;" class="btn-save">Add new to-do list</button>
                 </div>
-                <div id="root"></div>
+                <div id="root"></div> -->
+
+                   <!-- <div class="card" style="max-width: 25%">
+                      <div class="card-body">
+                        <div class="card-header d-flex justify-content-between">
+                            <span class="card-heading ">Tasks</span>
+                            <button data-toggle="modal" data-target="#staticBackdrop" class="btn btn-outline-secondary rounded-pill add-btn-color">+ Add Task</button>
+                        </div>
+                        <div id="showAllTasks">
+        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card" style="max-width: 25%">
+                      <div class="card-body">
+                        <div class="card-header d-flex justify-content-between">
+                            <span class="card-heading ">To Do</span>
+                            <button class="btn btn-outline-secondary rounded-pill add-btn-color">+ Add Task</button>
+                        </div>
+                        <div id="showAllTasks">
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card" style="max-width: 25%">
+                      <div class="card-body">
+                        <div class="card-header d-flex justify-content-between">
+                            <span class="card-heading ">Done</span>
+                            <button class="btn btn-outline-secondary rounded-pill add-btn-color">+ Add Task</button>
+                        </div>
+                        <div id="showAllTasks">
+                            
+                        </div>
+                      </div>
+                    </div> 
+                  -->
                     
                 
                   </div>
@@ -306,10 +293,10 @@
 
 
 
-      <script src="../../assets/js/Controllers/team.js"></script>
-    <script src="../../assets/js/Controllers/user.js"></script>
-    <script src="../../js/taskController/task.js"></script>
-    <script src="../../js/projectController/project.js"></script>
+    
+    <!-- <link src="../../assets/js/Controllers/user.js"></link>
+    <link src="../../assets/js/taskController/task.js"></link>
+    <link src="../../js/projectController/project.js"></link> -->
     <!-- <script>
       showUserName = currentUser.firstName;
       showLastName = currentUser.lastName;
@@ -322,7 +309,9 @@
     <script src="../../js/sweetalert2.all.min.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
 
-    <script src="../../js/taskController/scriptTask.js"></script>
+<script src="../../assets/js/taskController/task.js"></script>
+
+    <script src="../../assets/js/Controllers/scriptTask.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

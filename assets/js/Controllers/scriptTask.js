@@ -1,5 +1,42 @@
 let root = document.getElementById("root");
 
+
+// USERS LIST GOTTEN FROM LOCAL STORAGE
+users = JSON.parse(localStorage.getItem("users"));
+
+// CURRENT USER GOTTEN FROM LOCAL STORAGE
+currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+// PROJECTS LIST GOTTEN FROM LOCAL STORAGE
+projects = JSON.parse(localStorage.getItem("projects"));
+if (projects == null || projects == undefined) {
+  projects = [];
+}
+
+teams = JSON.parse(localStorage.getItem("teams"));
+if (teams == null || teams == undefined) {
+  teams = [];
+}
+
+// CURRENT USER GOTTEN FROM LOCAL STORAGE
+currentProject = JSON.parse(localStorage.getItem("currentProject"));
+if (currentProject == null || currentProject == undefined) {
+  currentProject = {};
+}
+
+// TASKS GOTTEN FROM LOCAL STORAGE
+tasks = JSON.parse(localStorage.getItem("tasks"));
+if (tasks == null || tasks == undefined) {
+  tasks = [];
+}
+
+// TASKS LIST GOTTEN FROM LOCAL STORAGE
+tasksList = JSON.parse(localStorage.getItem("tasksList"));
+if (tasksList == null || tasks == undefined) {
+  tasksList = [];
+}
+
+
 class todoList {
   constructor(place, title = "to-do list") {
     this.place = place;
@@ -16,7 +53,7 @@ class todoList {
     this.button.id = "to-do-list-button";
 
     this.button.addEventListener("click", () => {
-      if (this.input.value != "") {
+      if (this.input.value.trim() != "") {
         this.addToDo.call(this);
         this.input.value = "";
       }
@@ -36,11 +73,30 @@ class todoList {
 
   addToDo() {
     let text = this.input.value;
+  //   let tasksListId;
+
+  //   for (let i = 0; i <= tasksList.length; i++) {
+  //     tasksListId = i;
+  //   }
+  
+  //   newTasksList = {tasksListId: tasksListId,
+  //     tasksListName: this.input.value
+  //   };
+
+  //   tasksList.push(newTasksList);
+
+  // localStorage.setItem("tasksList", JSON.stringify(tasksList));
+  // currentTaskList = localStorage.setItem(
+  //   "currentTaskList",
+  //   JSON.stringify(newTasksList)
+  // );
 
     /*let card = document.createElement('div');
         card.innerText = text;
         this.div.append(card);*/
 
+    // this.cardArray.push(new Card(currentTaskList.tasksListName, this.div, this));
+    
     this.cardArray.push(new Card(text, this.div, this));
   }
 }
@@ -127,7 +183,7 @@ class Card {
     });
 
     this.commentsButton.addEventListener("click", () => {
-      if (this.commentsInput.value != "") {
+      if (this.commentsInput.value.trim() != "") {
         this.state.comments.push(this.commentsInput.value);
         this.renderComments();
         this.commentsInput.value = "";

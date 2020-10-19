@@ -10,7 +10,8 @@ let tasks = [
         assignTo: "Chi",
         taskDescription: "Build a footer-bar",
         dueDate: "22nd April",
-      }
+      },
+
   ];
   displayTasks();
   // Display profile function
@@ -27,6 +28,7 @@ let tasks = [
       }
     }
     document.getElementById("view-tasks").innerHTML = content;
+
     tasks = JSON.parse(localStorage.getItem("tasks"));
-    tasks = JSON.parse(localStorage.getItem("acceptedTasks"));
+    
   }

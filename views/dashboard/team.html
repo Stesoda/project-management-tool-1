@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body onload="displayUsers()">
-        <div id="showSelected" style="border: 1px solid black;  margin-bottom: 10px;">
-            selected user appears here!
-        </div>
-        <input type="text" id="teamName" placeholder="Enter Team Name">
-        <button onclick="createTeam()">Create Team</button>
-        <div>
-            <select multiple style="height: 20vh; width: 25vw; font-size: 1.2rem;" name="users" id="usersList">
-                <option id ="1" onclick="addUp(event)" value="abuja">Abuja</option>
-                <option id ="2" onclick="addUp(event)" value="ogun">Ogun</option>
-                <option id ="3" onclick="addUp(event)" value="lokoja">Lokoja</option>
-                <option id ="4" onclick="addUp(event)" value="benin">Abuja</option>
-                <option id ="5" onclick="addUp(event)" value="lagos">Lagos</option>
-            </select>
-        </div>
-    <script src="../../assets/js/Controllers/"></script>
-</body>
+  </head>
+  <body onload="displayUsers()">
+    <div id="showSelected" style="border: 1px solid black; margin-bottom: 10px">
+      selected user appears here!
+    </div>
+    <input type="text" id="teamName" placeholder="Enter Team Name" />
+    <button onclick="createTeam()">Create Team</button>
+    <div>
+      <select
+        multiple
+        style="height: 20vh; width: 25vw; font-size: 1.2rem"
+        name="users"
+        id="usersList"
+      >
+        <option id="1" onclick="addUp(event)" value="abuja">Abuja</option>
+        <option id="2" onclick="addUp(event)" value="ogun">Ogun</option>
+        <option id="3" onclick="addUp(event)" value="lokoja">Lokoja</option>
+        <option id="4" onclick="addUp(event)" value="benin">Abuja</option>
+        <option id="5" onclick="addUp(event)" value="lagos">Lagos</option>
+      </select>
+    </div>
+    <script src="../../assets/js/Controllers/team.js"></script>
+  </body>
 </html>

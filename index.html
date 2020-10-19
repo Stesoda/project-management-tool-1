@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/navigation.css" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
-    <link rel="stylesheet" href="./assets/css/loader.css" />
-       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- add bootstrap css -->
     <link
       rel="stylesheet"
@@ -27,9 +23,10 @@
     <link rel="stylesheet" href="../assets/css/index.css" />
     <link rel="stylesheet" href="../assets/css/about.css" />
     <link rel="stylesheet" href="../assets/css/newpricing.css" />
+    <link rel="stylesheet" href="../assets/css/loader.css" />
     <!-- <link rel="stylesheet" href="./assets/css/foottest.css" /> -->
     <link rel="stylesheet" href="./assets/css/contact.css" />
-
+    <script src="./assets/js/loader.js"></script>
     <title>BASCOM PROJECTS</title>
     <script
       src="https://kit.fontawesome.com/bb034dbd21.js"
@@ -38,209 +35,487 @@
   </head>
   <!--Body tag-->
   <body>
-
     <!-- Loader section  -->
     <div class="loader-holder">
       <div class="bounce1"></div>
       <div class="bounce2"></div>
       <div class="bounce3"></div>
       <div class="bounce4"></div>
-
-    <!-- Sign In Modal -->
-    <div
-      class="modal fade"
-      id="elegantModalForm"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <!--Content-->
-        <div class="modal-content form-elegant">
-          <!--Header-->
-          <div class="modal-header text-center">
-            <h3
-              class="modal-title w-100 dark-grey-text font-weight-bold my-3"
-              id="myModalLabel"
-            >
-              <strong>Sign in</strong>
-            </h3>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!--Body-->
-          <div class="modal-body mx-4">
-            <!--Body-->
-            <div class="md-form mb-5">
-              <div class="alert w-50" role="alert" id="loginAlert"></div>
-              <input
-                type="email"
-                id="loginEmail"
-                class="form-control validate"
-                placeholder="Your Email"
-              />
+    </div>
+    <div id="contentLoaded">
+      <!-- Sign In Modal -->
+      <div
+        class="modal fade"
+        id="elegantModalForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <!--Content-->
+          <div class="modal-content form-elegant">
+            <!--Header-->
+            <div class="modal-header text-center">
+              <h3
+                class="modal-title w-100 dark-grey-text font-weight-bold my-3"
+                id="myModalLabel"
+              >
+                <strong>Sign in</strong>
+              </h3>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
+            <!--Body-->
+            <div class="modal-body mx-4">
+              <!--Body-->
+              <div class="md-form mb-5">
+                <div class="alert w-50" role="alert" id="loginAlert"></div>
+                <input
+                  type="email"
+                  id="loginEmail"
+                  class="form-control validate"
+                  placeholder="Your Email"
+                />
+              </div>
 
-            <div class="md-form pb-3">
-              <input
-                type="password"
-                id="loginPassword"
-                class="form-control validate"
-                placeholder="Your Password"
-              />
+              <div class="md-form pb-3">
+                <input
+                  type="password"
+                  id="loginPassword"
+                  class="form-control validate"
+                  placeholder="Your Password"
+                />
 
-              <p class="font-small blue-text d-flex justify-content-end">
-                Forgot <a href="#" class="blue-text ml-1"> Password?</a>
+                <p class="font-small blue-text d-flex justify-content-end">
+                  Forgot <a href="#" class="blue-text ml-1"> Password?</a>
+                </p>
+              </div>
+
+              <div class="text-center mb-3">
+                <button
+                  type="button"
+                  class="btn blue-gradient btn-block btn-rounded z-depth-1a bt-primary"
+                  onclick="login()"
+                >
+                  Sign in
+                </button>
+              </div>
+              <p
+                class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"
+              >
+                or Sign in with:
+              </p>
+
+              <div class="row my-3 d-flex justify-content-center">
+                <!--Facebook-->
+                <button
+                  type="button"
+                  class="btn btn-white btn-rounded mr-md-3 z-depth-1a"
+                >
+                  <i class="fab fa-facebook-f text-center"></i>
+                </button>
+                <!--Twitter-->
+                <button
+                  type="button"
+                  class="btn btn-white btn-rounded mr-md-3 z-depth-1a"
+                >
+                  <i class="fab fa-twitter"></i>
+                </button>
+                <!--Google +-->
+                <button
+                  type="button"
+                  class="btn btn-white btn-rounded z-depth-1a"
+                >
+                  <i class="fab fa-google-plus-g"></i>
+                </button>
+              </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer mx-5 pt-3 mb-1">
+              <p class="font-small grey-text d-flex justify-content-end">
+                Not a member?
+                <a href="../views/signup.html" class="blue-text ml-1">
+                  Sign Up</a
+                >
               </p>
             </div>
+          </div>
+          <!--/.Content-->
+        </div>
+      </div>
+      <!-- Modal -->
 
-            <div class="text-center mb-3">
-              <button
-                type="button"
-                class="btn blue-gradient btn-block btn-rounded z-depth-1a bt-primary"
-                onclick="login()"
+      <header>
+        <!--Nav bar section-->
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <label class="logo"
+            ><a href="./index.html"
+              ><span class="text-primary">BAS</span
+              ><span class="logo-text">COM</span></a
+            ></label
+          >
+          <!--Nav bar list-->
+          <ul id="navbarList">
+            <li class="nav-item">
+              <a href="#about">Why Bascom Projects?</a>
+            </li>
+            <li class="nav-item"><a href="#pricing">Pricing</a></li>
+            <li class="nav-item"><a href="#contact">Contact us</a></li>
+            <li class="nav-item">
+              <a
+                href="./login.html"
+                class="nav-item"
+                data-toggle="modal"
+                data-target="#elegantModalForm"
+                >Log in</a
               >
-                Sign in
-              </button>
-            </div>
-            <p
-              class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"
-            >
-              or Sign in with:
-            </p>
+            </li>
+            <li class="nav-item-trail">
+              <a href="../views/signup.html">Free Trial</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--Main Body section-->
 
-            <div class="row my-3 d-flex justify-content-center">
-              <!--Facebook-->
-              <button
-                type="button"
-                class="btn btn-white btn-rounded mr-md-3 z-depth-1a"
-              >
-                <i class="fab fa-facebook-f text-center"></i>
-              </button>
-              <!--Twitter-->
-              <button
-                type="button"
-                class="btn btn-white btn-rounded mr-md-3 z-depth-1a"
-              >
-                <i class="fab fa-twitter"></i>
-              </button>
-              <!--Google +-->
-              <button
-                type="button"
-                class="btn btn-white btn-rounded z-depth-1a"
-              >
-                <i class="fab fa-google-plus-g"></i>
-              </button>
+      <!-- SECTION: HERO BEGINS -->
+      <section class="landing-section mx-auto">
+        <h2>
+          Make your dreams come true with proper planning from start to finish
+        </h2>
+        <p class="text-muted pt-4">
+          BASCOM Projects is a user friendly and easy to use Project Management
+          Tool that makes it easier for technical and non-technical personnel to
+          make their dreams come through.
+        </p>
+        <a href="./views/signup.html"
+          ><button class="landing-try">Try for Free</button></a
+        >
+      </section>
+      <!-- SECTION: HERO BEGINS -->
+
+      <!-- SECTION: ABOUT BEGINS -->
+      <section class="about-section">
+        <h2 class="text-center m-4">Simplicity. Focus. Accomplishment.</h2>
+        <div class="about-split-content">
+          <div class="container">
+            <div class="row m-4">
+              <div class="about-image col-lg-6">
+                <img
+                  src="./assets/img/f3e6f001f64ba6bab8e1100fbeefba6b.png"
+                  class="img-fluid p-0 mb-3"
+                  alt=""
+                />
+              </div>
+              <div class="about-content col-lg-6 my-auto p-0">
+                <p class="text-justify">
+                  BASCOM Projects is a user friendly Project Management
+                  Tool(software) that is aimed at creating a much easier User
+                  experience for our users with a target at both technical and
+                  non technical users. It will support the lifecycle of a
+                  project which includes: Initiating, planning, executing,
+                  monitoring/control and closing. It will provide a platform
+                  where proper management, communication, organisation mapping
+                  sequence of events and accounting during the project are
+                  handled properly; In a bid to manage time,cost quality and
+                  general scope of the plan.
+                </p>
+              </div>
             </div>
           </div>
-          <!--Footer-->
-          <div class="modal-footer mx-5 pt-3 mb-1">
-            <p class="font-small grey-text d-flex justify-content-end">
-              Not a member?
-              <a href="../views/signup.html" class="blue-text ml-1"> Sign Up</a>
+        </div>
+      </section>
+      <!-- SECTION: ABOUT BEGINS -->
+
+      <!-- SECTION: PRICING BEGINS -->
+      <section>
+        <div class="pricing-container">
+          <div class="m-4">
+            <!-- <div class="pricing-heading"></div> -->
+            <h2 class="text-center">Pricing</h2>
+            <p class="text-center text-muted">
+              get the power to control your project in diverse ways
             </p>
           </div>
-        </div>
-        <!--/.Content-->
-      </div>
+          <!-- PRICING PACKAGES -->
+          <div class="pricing-cards-container">
+            <div class="container">
+              <div class="row justify-content-center">
+                <!-- BASIC START -->
 
-    </div>
-    <header>
-      <!--Nav bar section-->
-      <nav class="navbar">
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo"
-          ><a href="./index.html"
-            ><span class="text-primary">BAS</span
-            ><span class="logo-text">COM</span></a
-          ></label
-        >
-        <!--Nav bar list-->
-        <ul>
-          <li class="nav-item">
-            <a href="#about">Why Bascom Projects?</a>
-          </li>
-          <li class="nav-item"><a href="#pricing">Pricing</a></li>
-          <li class="nav-item"><a href="#contact">Contact us</a></li>
-          <li class="nav-item">
-            <a
-              href="./login.html"
-              class="nav-item"
-              data-toggle="modal"
-              data-target="#elegantModalForm"
-              >Log in</a
-            >
-          </li>
-          <li class="nav-item-trail">
-            <a href="../views/signup.html">Free Trial</a>
-          </li>
-          <li class="nav-item"><a href="./pricing.html">Pricing</a></li>
-          <li class="nav-item"><a href="./contact.html">Contact us</a></li>
-          <li class="nav-item"><a href="./login.html">Log in</a></li>
-          <li class="nav-item-trail"><a href="./signup.html">Free Trial</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!--Main Body section-->
-    <section class="landing-section">
-      <h1>
-        Make your dreams come true with proper planning from start to finish
-      </h1>
-      <p>
-        BASCOM Projects is a user friendly and easy to use Project Management
-        Tool that makes it easier for technical and non-technical personnel to
-        make their dreams come through.
-      </p>
-      <a href="./signup.html"
-        ><button class="landing-try">Try for Free</button></a
-      >
-    </section>
-    <footer class="landing-footer-section">
-      <div class="landing-footer-full-logo">
-        <span
-          ><h1>
-            <span class="landing-footer-logo">&copyBAS</span>COM INC.
-          </h1></span
-        >
-      </div>
-      <div class="landing-footer-menu">
-        <p>
-          <a href=""><span>Terms and Policy</span></a
-          ><a href=""><span class="landing-footer-space">Blog</span></a>
-        </p>
-        <p>
-          <a href=""><span>Bascom Policy</span></a
-          ><a href=""><span class="landing-footer-space">FAQs</span></a>
-        </p>
-      </div>
-      <div class="landing-footer-external-links">
-        <p>Contact Us on Social Media:</p>
-        <div class="landing-footer-icons">
-          <a href="#"
-            ><img src="https://img.icons8.com/office/16/000000/linkedin.png"
-          /></a>
-          <a href="#"
-            ><img src="https://img.icons8.com/officexs/16/000000/facebook.png"
-          /></a>
-          <a href="#"
-            ><img
-              src="https://img.icons8.com/officexs/16/000000/instagram-new.png"
-          /></a>
-          <a href="#"
-            ><img
-              src="https://img.icons8.com/ultraviolet/16/000000/twitter-circled.png"
-          /></a>
+                <div
+                  id="pricing-card-basic"
+                  class="pricing-card col-md-4 col-sm-4 col-lg m-4"
+                >
+                  <div>
+                    <div class="pricing-card-header">
+                      <div class="p-card-1st-div">BASIC</div>
+                      <div class="p-card-2nd-div">FREE</div>
+                    </div>
+                    <div class="pricing-features-list">
+                      <ul>
+                        <li><i class="fas fa-check"></i>Unlimited tasks</li>
+                        <li><i class="fas fa-check"></i>Unlimited projects</li>
+                        <li><i class="fas fa-check"></i>Unlimited tasks</li>
+                        <li><i class="fas fa-check"></i>List view projects</li>
+                        <li>
+                          <i class="fas fa-check"></i>Unlimited activity log
+                        </li>
+                        <li><i class="fas fa-check"></i>Calendar view</li>
+                      </ul>
+                      <button id="p-btn-basic">FREE</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- BASIC END -->
+
+                <!-- STANDARD  START-->
+                <div
+                  id="pricing-card-standard"
+                  class="pricing-card col-md-4 col-sm-4 col-lg m-4"
+                >
+                  <div class="pricing-card-header">
+                    <div class="p-card-1st-div">STANDARD</div>
+                    <div class="p-card-2nd-div">$99.99/MON</div>
+                  </div>
+                  <div class="pricing-features-list">
+                    <ul>
+                      <li><i class="fas fa-check"></i>Unlimited tasks</li>
+                      <li><i class="fas fa-check"></i>Unlimited projects</li>
+                      <li><i class="fas fa-check"></i>Unlimited tasks</li>
+                      <li><i class="fas fa-check"></i>List view projects</li>
+                      <li>
+                        <i class="fas fa-check"></i>Unlimited activity log
+                      </li>
+                      <li><i class="fas fa-check"></i>Calendar view</li>
+                    </ul>
+                    <button id="p-btn-standard">SIGNUP</button>
+                  </div>
+                </div>
+                <!-- STANDARD END-->
+
+                <!-- PREMIUM START-->
+                <div
+                  id="pricing-card-premium"
+                  class="pricing-card col-md-4 col-sm-4 col-lg m-4"
+                >
+                  <div class="pricing-card-header">
+                    <div class="p-card-1st-div">PREMIUM</div>
+                    <div class="p-card-2nd-div">$99.99/MON</div>
+                  </div>
+                  <div class="pricing-features-list">
+                    <ul>
+                      <li><i class="fas fa-check"></i>Unlimited tasks</li>
+                      <li><i class="fas fa-check"></i>Unlimited projects</li>
+                      <li><i class="fas fa-check"></i>Unlimited tasks</li>
+                      <li><i class="fas fa-check"></i>List view projects</li>
+                      <li>
+                        <i class="fas fa-check"></i>Unlimited activity log
+                      </li>
+                      <li><i class="fas fa-check"></i>Calendar view</li>
+                    </ul>
+                    <button id="p-btn-premium">SIGNUP</button>
+                  </div>
+                </div>
+                <!-- PREMIUM  END-->
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+      <!-- SECTION: PRICING ENDS -->
+
+      <!-- SECTION: CONTACT US BEGINS -->
+      <section class="contact-section">
+        <div class="login-container">
+          <h2>Reach out to us.</h2>
+          <form action="" class="">
+            <div class="form-group">
+              <label for="fullName">Contact Name:</label>
+              <input
+                class="form-control"
+                id="fullName"
+                type="text"
+                placeholder="Enter Full Name"
+                name="name"
+                required
+              />
+            </div>
+
+            <label for="email">Email:</label>
+            <input
+              class="form-control"
+              id="email"
+              type="email"
+              placeholder="Enter Email"
+              name="email"
+              required
+            />
+            <label for="message">Message:</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+            <!-- <input type="submit" value="Submit" /> -->
+            <button class="form-control margin-5px" type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- SECTION: CONTACT US ENDS -->
+
+      <!-- Footer -->
+      <footer class="page-footer font-small unique-color-dark">
+        <div style="background-color: #0099cc">
+          <div class="container">
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+              <!-- Grid column -->
+              <div
+                class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0"
+              >
+                <h6 class="mb-0">Get connected with us on social networks!</h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-7 text-center text-md-right">
+                <!-- Facebook -->
+                <a class="fb-ic">
+                  <i class="fab fa-facebook-f white-text mr-4"> </i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic">
+                  <i class="fab fa-twitter white-text mr-4"> </i>
+                </a>
+                <!-- Google +-->
+                <a class="gplus-ic">
+                  <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic">
+                  <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic">
+                  <i class="fab fa-instagram white-text"> </i>
+                </a>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase font-weight-bold">bascom</h6>
+              <hr
+                class="accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #0099cc"
+              />
+              <p>
+                “Our goals can only be reached through a vehicle of a plan, in
+                which we must fervently believe, and upon which we must
+                vigorously act. There is no other route to success.” ― Pablo
+                Picasso, painter
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Products</h6>
+              <hr
+                class="accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #0099cc"
+              />
+              <p>
+                <a href="#!">Projects</a>
+              </p>
+              <p>
+                <a href="#!">Transact</a>
+              </p>
+              <p>
+                <a href="#!">Connect</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+              <hr
+                class="accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #0099cc"
+              />
+              <p>
+                <a href="#!">Why Bascom Projects?</a>
+              </p>
+              <p>
+                <a href="#!">Pricing</a>
+              </p>
+              <p>
+                <a href="#!">FAQs</a>
+              </p>
+              <p>
+                <a href="#!">Documentation</a>
+              </p>
+              <p>
+                <a href="#!">Resources</a>
+              </p>
+              <p>
+                <a href="#!">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Contact</h6>
+              <hr
+                class="accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #0099cc"
+              />
+              <p><i class="fas fa-home mr-3"></i> Abuja, Nigeria</p>
+              <p><i class="fas fa-envelope mr-3"></i> projects@bascom.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 234 8130 338</p>
+              <!-- <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p> -->
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          © 2020
+          <a href="#"> <span class="landing-footer-logo">BAS</span>COM INC.</a>
+        </div>
+<<<<<<< HEAD
       </div>
       <!--Search Bar-->
       <form class="search" action="post">
@@ -248,13 +523,18 @@
         <button type="submit"><i class="fa fa-search"></i></button>
       </form>
     </footer>
-    <script src="./js/loader.js"></script>
+    <!-- <script src="./assets/js/loader.js"></script> -->
+=======
+        <!-- Copyright -->
+      </footer>
+    </div>
+>>>>>>> upstream/advancebranch
     <!-- Footer -->
     <!--User JS-->
     <!-- <script src="../js/auth/user.js"></script> -->
     <script src="./assets/js/sweetalert2.all.min.js"></script>
     <script src="./assets/js/Controllers/user.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- add bootstrap js -->
