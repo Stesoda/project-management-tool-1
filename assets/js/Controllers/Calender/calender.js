@@ -1,28 +1,7 @@
-const TaskTable = [
-  {
-    taskName: "sdome name",
-    startDate: "2020-10-17",
-    endDate: "2020-10-20",
-  },
+// TASKS GOTTEN FROM LOCAL STORAGE
+const Tasks = JSON.parse(localStorage.getItem("tasks"));
 
-  {
-    taskName: "sdome name",
-    startDate: "2020-10-20",
-    endDate: "2020-10-20",
-  },
-  {
-    taskName: "sdome name",
-    startDate: "2020-10-30",
-    endDate: "2020-10-30",
-  },
-  {
-    taskName: "sdome name",
-    startDate: "2020-10-27",
-    endDate: "2020-10-28",
-  },
-];
-
-var data = TaskTable.map((task) => {
+var data = Tasks.map((task) => {
   return {
     title: task.taskName,
     start: task.startDate,

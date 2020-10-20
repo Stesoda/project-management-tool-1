@@ -1,40 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
-    <link rel="stylesheet" href="./assets/css/Dashboard.css">   
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
-<body>
-    <!--Header section-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 shrink-to-fit-no"
+    >
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- <link
+      rel="stylesheet"
+      href="../../assets/css/bootstrap/bootstrap.min.css"
+    /> -->
+    <link rel="stylesheet" href="../../assets/css/temp.css">
+    <link rel="stylesheet" href="../../assets/css/projects.css" />
+    <link rel="stylesheet" href="../../assets/css/task.css">
+    <link rel="stylesheet" href="../../assets/css/styleTask.css">
 
-      <header>
-           <li class="nav-chat" href="chat.html"><button><i class="fa fa-comments" >Chat</i></button></li>
-            <li class="nav-share" href="share.html"><button>Share</button></li>
+    <link src="../../assets/js/auth/auth.js"></link>
 
-            <img src="./assets/img/Onyedika.jpg" alt="Team member" class="picture">
-            <img src="./assets/img/Chidinma.jpg" alt="Team member" class="picture">
-            <img src="./assets/img/Sophia.jpg" alt="Team member" class="picture">
+    <link src="https://kit.fontawesome.com/b99e675b6e.js"></link>
 
-             <!-- logo-section-->
-          <label class="logo"><img src="./assets/img/Logo.png" class="path"></img><span class="text-primary">BAS</span><l-heading>COM</l-heading><i class="fas fa-ellipsis-h"></i></label>     
+    <title>Bascom || Task Overview</title>
+  </head>
+
+    <body>
+      <!-- ############### [ MODAL FOR TO ADD TASK ] ########################-->
+      <div
+      class="modal fade addProject"
+      id="staticBackdrop"
+      data-backdrop="static"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-default-color" id="staticBackdropLabel">
+              Add new Task
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label"
+                  >Task Name</label
+                >
+                <input
+                  type="text"
+                  name="task-name"
+                  placeholder="Task Name"
+                  id="taskName"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label"
+                  >Task Description</label
+                >
+                <textarea
+                  class="form-control"
+                  cols="10"
+                  rows="5"
+                  name="task-description"
+                  placeholder="Task Description"
+                  id="taskBody"
+                ></textarea>
+
+                <label for="date" class="col-form-label">Timeline</label> <br>
+                <div class="input-group pt-1 pb-2">
+                    <br><input type="date" class="form-control" placeholder="YYYY-MM-DD" id="startDate">
+                    <div class="input-group-addon mx-1">to</div>
+                    <input type="date" class="form-control" placeholder="YYYY-MM-DD" id="endDate">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary" onclick="addTask()">
+              Create Task
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ###############[ MODAL END ]########################################## -->
+      
+    <!-- ###########################[ NAVBAR BEGINS HERE] ############################################# -->
+      <nav class="navbar navbar-light bg-light flex-md-nowrap fixed-top  p-0 shadow-sm">
+        <div class="">
+          <div class="row">
+            
+            <ul class="navbar-nav px-3">
+              <div class="d-flex flex-row justify-content-end">
+                  <!-- <span class="fas fa-search form-control-feedback"></span> -->
+                  <input type="text" placeholder="Search..." class="form-control search"></input>
+                
+                <img src="../../assets/img/Onyedika.jpg" alt="Team member" class="picture">
+                <img src="../../assets/img/Chidinma.jpg" alt="Team member" class="picture">
+                <img src="../../assets/img/Sophia.jpg" alt="Team member" class="picture">
+              <button class="nav-btn badge badge-pill"><a  href="chat.html"><i class="fa fa-comments" >Chat</i></a></button>
+              <button class="nav-btn badge badge-pill"><a  href="share.html"><i class="fa fa-comments" >Share</i></a></button>
+              
+              </div>
+                
         
-          <nav>
-        
-        <!--Nav bar list-->
-        <ul>
-            <li class="nav-item"><a href="overview.html">Overview</a></li>
-            <li class="nav-item"><a href="activity.html">Activity</a></li>
-            <li class="nav-item"><a href="calender.html">Calender</a></li>
-            <li class="nav-item"><a href="files.html">Files</a></li>
-           
-        </ul>
-       
-    </nav>
-   
-    </header>
+            
+            </ul>
+          </div>
+          <ul class="nav flex-row offset-lg-2 offset-sm-0">
+            <li class="nav-item">
+              <a class="nav-link hover-border-bottom active" href="taskDetail.html">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-border-bottom" href="activities.html">Activities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-border-bottom" href="#">Calender</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-border-bottom" href="#">Files</a>
+            </li>
+            
+          </ul>
 
-</body>
+        </div>
+      </nav>
+    <!-- ###########################[ NAVBAR BEGINS HERE] ############################################# -->
+
+    <!-- ###########################[ SIDEBAR BEGINS HERE] ############################################# -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 d-none d-md-block sidebar px-1">
+            <div class="left-sidebar">
+              <a class="navbar-brand col-md-2 ml-0 pr-1 my-2" href="temp.html">
+              <img src="../../assets/img/Logo.png" width="30" height="30" class="align-top" alt="">
+              <span class="font-weight-bolder">
+              <span class="text-primary">BAS</span><span class="text-white">COM</span>  
+            </span>
+            
+            </a>
+            <div class="d-flex justify-content-around">
+              <div class="profile mt-2 ">
+                <img id="theAvatar" src="../../assets/img/Sophia.jpg" alt="Avatar" class="avatar my-2"></img>                <div class="profile-info-group">
+                  <p class="profile-name mb-0" id="userName"></p>
+                  <small class="profile-info primary-options-color text-wrap" id="userRole"></small>
+                </div>
+                <span >
+                <li class="dropdown"><a class="dropdown-toggle ml-3" data-toggle="dropdown" href="#" id="DropdownProfile">...</a>
+                  <ul class="dropdown-menu">
+                    <li class="mx-2"><a href="#" class="text-black">Profile</a></li>
+                    <li class="mx-2"><a href="#" class="text-black">Settings</a></li>
+                    <li class="mx-2" onclick="logout()"><a href="#" class="text-black" >Log Out</a></li>
+                  </ul>
+                </li>
+              </span>
+              </div>
+              
+            </div>
+              <ul class="nav flex-column sidehover">
+                <li class="nav-item">
+                  <a class="nav-link text-white hover-color" href="temp.html"><i class="fas fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item hover-color">
+                  <a class="nav-link text-white hover-color active" href="taskoverview.html"><i class="fas fa-tasks"></i>Tasks</a>
+                </li>
+                <li class="nav-item hover-color">
+                  <a class="nav-link text-white " href="/notification.html"><i class="fas fa-bell"></i>Notification</a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="overflow-auto">
+              <div class="project-teams">
+                <a class="menu-header text-white px-2 py-2 cursor-pointer d-flex flex-row justify-content-between " data-toggle="collapse" data-target="#projects" aria-expanded="false" aria-controls="collapseExample">Projects <i class="fas fa-caret-down"></i></a>
+              </div>
+              <div class="collapse" id="projects">
+                <ul class="nav flex-column">
+                  <div id="projectsSidebar">
+
+                  </div>
+                  <div class="add-team-project primary-logo-color px-2"><small>+ Add new project</small></div>
+                </ul>
+              </div>
+              
+                <div class="project-teams">
+                  <a class="menu-header text-white primary-options-color px-2 py-2 cursor-pointer d-flex flex-row justify-content-between " data-toggle="collapse" data-target="#teams" aria-expanded="false" aria-controls="collapseExample">Teams <i class="fas fa-caret-down"></i></a>
+                </div>
+                <div class="collapse" id="teams">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active text-white" href="#"><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image my-1">Backend</i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#"><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image my-1">MiddleEnd</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#"><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image my-1">Frontend</a>
+                    </li>
+                    <a href="team.html"><div class="add-team-project primary-logo-color px-2"><small>+ Add a Team</small></div></a>
+                  </ul>
+                </div>
+            </div>
+              <!-- invite team -->
+            <div class="fixed-bottom">
+              <button type="button" class="btn btn-outline-light   btn-lg  mx-3 my-3">Invite Teams</button>
+            </div>
+        
+          </div>
+              <!-- ###########################[ SIDEBAR ENDS HERE] ############################################# -->
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-6">
+          <div class="mt-5"></div>
+            <div  class="container pt-5 mt-5">
+              <section class="container">
+
+                <!-- <input class="mt-3 d-flex flex-row justify-content-end" type="text" id="listName"><button onclick="addList()">Add list</button>
+                <div class="card-deck d-flex justify-content-around mt-4" id="showLists"> -->
+
+                  <input type="text" id="listName"><button onclick="addList()">Add list</button>
+                  <div class="card-deck d-flex justify-content-around mt-4" id="showLists">
+
+                  <!-- <div id="addTodoListDiv">
+                    <input id="addTodoListInput" class="comment">
+                    <button id="addTodoListButton" style="background-color: #0099cc;" class="btn-save">Add new to-do list</button>
+                </div>
+                <div id="root"></div> -->
+
+                   <!-- <div class="card" style="max-width: 25%">
+                      <div class="card-body">
+                        <div class="card-header d-flex justify-content-between">
+                            <span class="card-heading ">Tasks</span>
+                            <button data-toggle="modal" data-target="#staticBackdrop" class="btn btn-outline-secondary rounded-pill add-btn-color">+ Add Task</button>
+                        </div>
+                        <div id="showAllTasks">
+        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card" style="max-width: 25%">
+                      <div class="card-body">
+                        <div class="card-header d-flex justify-content-between">
+                            <span class="card-heading ">To Do</span>
+                            <button class="btn btn-outline-secondary rounded-pill add-btn-color">+ Add Task</button>
+                        </div>
+                        <div id="showAllTasks">
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card" style="max-width: 25%">
+                      <div class="card-body">
+                        <div class="card-header d-flex justify-content-between">
+                            <span class="card-heading ">Done</span>
+                            <button class="btn btn-outline-secondary rounded-pill add-btn-color">+ Add Task</button>
+                        </div>
+                        <div id="showAllTasks">
+                            
+                        </div>
+                      </div>
+                    </div> 
+                  -->
+                    
+                
+                  </div>
+            </section>
+                    
+              
+            </div>
+            
+          </main>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    
+    <!-- <link src="../../assets/js/Controllers/user.js"></link>
+    <link src="../../assets/js/taskController/task.js"></link>
+    <link src="../../js/projectController/project.js"></link> -->
+    <!-- <script>
+      showUserName = currentUser.firstName;
+      showLastName = currentUser.lastName;
+      userRole = currentUser.role
+      document.getElementById('userName').innerHTML = showUserName +  " " + showLastName;
+      document.getElementById('userRole').innerHTML = userRole;
+      document.getElementById('helloUserName').innerHTML = showUserName;
+    </script> -->
+    <!-- <script src="../../js/auth/user.js"></script> -->
+    <script src="../../js/sweetalert2.all.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+
+<script src="../../assets/js/taskController/task.js"></script>
+
+    <script src="../../assets/js/Controllers/scriptTask.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>

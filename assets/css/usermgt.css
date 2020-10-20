@@ -1,6 +1,7 @@
 .user-console-card{
-    justify-content: center;
+    justify-content: space-around;
 }
 .card-body{
     justify-content: center;
+    cursor: pointer;
 }

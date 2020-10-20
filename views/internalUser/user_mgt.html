@@ -1,0 +1,327 @@
+<!DOTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <title>Side Navigation Bar</title>
+  <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/sidebar.css">
+    <link rel="stylesheet" href="../../assets/css/Dashboard.css">  
+    <link rel="tyle.sheet" href="../../assets/css/activities.css">
+    <link rel="stylesheet" href="../../assets/css/usermgt.css">
+    <link rel="stylesheet" href="../../assets/css/managemetconsole/mngtlogin.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="../../assets/js/Controller/activites.js"></script>
+  
+</head>
+<body>
+  <input type="hidden" name="token" id="Token" value="">
+  <div class="d-flex flex-row h-100">
+    <aside>
+      <section class="wrapper">
+        <nav class="sidebar h-100">
+          <div class="sidebar-header d-flex flex-row mt-2">
+            <span class='icon mx-2 mt-1'></span><h5>BASCOM</h5>
+            <!-- <strong><span class='icon'></span></strong> -->
+          </div>
+    
+          
+          <div class="profile mt-2 ">
+            <img src="../../assets/img/Sophia.jpg" alt="Avatar" class="avatar"></img>
+            <div class="profile-info-group">
+              <p class="profile-name mb-0" id="profileName">Diogu Maxwell</p>
+              <h6 class="profile-info primary-options-color">CTO</h6>
+            </div>
+          </div>
+    
+         <div class="nav-list">
+           <div class="menu-header primary-options-color px-2"></div>
+            <ul class="list-unstyled d-flex flex-column">
+              <li class="" id="home
+              "><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fas fa-tasks"></i>Tasks</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i>Notifications</a></li>
+            </ul> 
+            
+          </div>
+          
+          <!-- <div class="nav-list">
+            <span class="project-teams">
+              <a class="menu-header primary-options-color px-2 py-2 cursor-pointer d-flex flex-row justify-content-between " data-toggle="collapse" data-target="#projects" aria-expanded="false" aria-controls="collapseExample">Projects <span class="down-caret align-self-center"></span></a>
+            </span>
+    
+            <div class="collapse" id="projects">
+              <ul class="list-unstyled d-flex flex-column" >
+                <li><a href="" onclick="displayPage()"><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image">Pace Time Sheet</a></li>
+                <li><a href=""><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image">Yellow Card System</a></li>
+                <li><a href=""><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image">Chat App</a></li>
+                <li><a href=""><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image">Project Management Tool</a></li>
+            </ul> 
+            <div class="add-team-project primary-logo-color px-2"><small>+ Add a Project</small></div>
+            </div>
+            
+            
+            
+          </div>
+          
+          <div class="nav-list">
+            <span class="project-teams">
+              <a class="menu-header primary-options-color px-2 py-2 cursor-pointer d-flex flex-row justify-content-between" data-toggle="collapse" data-target="#teams" aria-expanded="false" aria-controls="collapseExample">Teams <span class="down-caret align-self-center"></span></a>
+            </span>
+            <div id="teams" class="collapse">
+              <ul class="list-unstyled d-flex flex-column" >
+                <li><a href="#">Designers</a></li>
+                <li><a href="#">Backend</a></li>
+                <li><a href="#">Frontend</a></li>
+              </ul>
+    
+              <div class="add-team-project primary-logo-color px-2"><small>+ Add a Team</small></div>
+            </div>
+            
+          </div>
+          
+            <div class="bottom-content list-u font-14 fixed-bottom pt-2 pb-3">
+    
+             <small class=""><a class="primary-logo-cContentolor pl-0 pr-0 mr-0 font-14" href="#">Invite your team</a> and start collaborating!</small> 
+          </div> -->
+        </nav>  
+      </section>
+      <!-- <header>
+    
+        <a class="nav-chat" href="chat.html"><button><i class="fa fa-comments" >Chat</i></button></a>
+        <a class="nav-share" href="share.html"><button>Share</button></a>
+    
+        <img src="../../assets/img/Onyedika.jpg" alt="Team member" class="picture">
+        <img src="../../assets/img/Chidinma.jpg" alt="Team member" class="picture">
+        <img src="../../assets/img/Sophia.jpg" alt="Team member" class="picture">
+    
+         logo-section
+      <label class="logo"><img src="../../assets/img/Logo.png" class="path"></img><span class="text-primary">BAS</span><l-heading>COM</l-heading><i class="fas fa-ellipsis-h"></i></label>     
+    
+      <nav>
+    
+    Nav bar list
+    <ul>
+        <li class="nav-item"><a href="overview.html">Overview</a></li>
+        <li class="nav-item"><a href="activity.html">Activity</a></li>
+        <li class="nav-item"><a href="calender.html">Calender</a></li>
+        <li class="nav-item"><a href="files.html">Files</a></li>
+       
+    </ul>
+    
+    </nav>
+    
+    </header> -->
+    
+    </aside>
+        <div class="main_content d-flex flex-column container-fluid px-2">
+          <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand d-flex" href="#">
+              <img src="../../assets/img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+              <span>
+              <span class="text-primary">BAS</span><l-heading>COM</l-heading>  
+            </span>
+            </a>
+          </nav>
+
+          <!-- USER MANAGEMENT CONSOLE -->
+
+            <!-- Registered Users -->
+          <div class="card-deck" id="user-mgt" >
+            <div class="card user-console-card" >
+             
+              <div class="card-body" id="registeredUsers" onclick="displayUsers()">
+                <h5 class="card-title">Registered Users</h5>
+                <p class="card-text" id="registeredUsersNumber"></p>
+                <p class="card-text"><small class="text-muted">Last updated 4 days ago</small></p>
+              </div>
+            </div>
+               <!-- Tasks Created -->
+            <div class="card" >
+              <div class="card-body">
+                <h5 class="card-title">Projects Created</h5>
+                <p class="card-text" id="projectsCreatedNumber"></p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+
+             <!-- Tasks Completed -->
+             
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Tasks Completed</h5>
+                <p class="card-text">1</p>
+                <p class="card-text"><small class="text-muted">Last updated 20 mins ago</small></p>
+              </div>
+            </div>
+        </div>
+        <!--show table on click-->
+        <div id="showConsole" class="container m-4" onload="displayUsers()">
+
+        </div>
+
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add">
+          Launch demo modal
+        </button> -->
+
+        <!--Add User Modal -->
+        <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <label for="firstName">First Name:</label>
+            <input
+              id="firstName" class="form-control py-3"
+              type="text"
+              placeholder="Enter Your First Name"
+              name="firstName"
+              required
+            />
+            <label for="lastName">Last Name:</label>
+            <input
+              id="lastName" class="form-control py-3"
+              type="text"
+              placeholder="Enter Your Last Name"
+              name="firstName"
+              required
+            />
+            <label for="role">Role:</label>
+            <input
+              id="role" class="form-control py-3"
+              type="text"
+              placeholder="Enter Your Job Role"
+              name="firstName"
+              required
+            />
+            <label for="email">Email:</label>
+            <input
+              id="email" class="form-control py-3"
+              type="email"
+              placeholder="Enter Email Address"
+              name="email"
+              required
+            />
+            <label for="password">Password:</label>
+            <input
+              id="password" class="form-control py-3"
+              type="password"
+              placeholder="Enter Password"
+              name="password"
+              required
+            />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="addUser()">Add User</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Add User Modal End-->
+
+        <!--Edit Modal-->
+        <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <input type="hidden" id="index" >
+                <label for="firstName">First Name:</label>
+            <input
+              id="editfirstName" class="form-control py-3"
+              type="text"
+              placeholder="Enter Your First Name"
+              name="firstName"
+              required
+            />
+            <label for="lastName">Last Name:</label>
+            <input
+              id="editlastName" class="form-control py-3"
+              type="text"
+              placeholder="Enter Your Last Name"
+              name="firstName"
+              required
+            />
+            <label for="role">Role:</label>
+            <input
+              id="editrole" class="form-control py-3"
+              type="text"
+              placeholder="Enter Your Job Role"
+              name="firstName"
+              required
+            />
+            <label for="email">Email:</label>
+            <input
+              id="editemail" class="form-control py-3"
+              type="email"
+              placeholder="Enter Email Address"
+              name="email"
+              required
+            />
+            <label for="password">Password:</label>
+            <input
+              id="editpassword" class="form-control py-3"
+              type="password"
+              placeholder="Enter Password"
+              name="password"
+              required
+            />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="update()">Update User</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Edit Maodal End-->
+
+
+        <!--Search Output Modal-->
+        <!-- Modal -->
+        <div class="modal fade" id="searchOutput" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" >
+                ...
+              </div>
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <!--Search Output Modal End-->
+
+
+          <!--END:  USER MANAGEMENT CONSOLE -->
+      
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../../assets/js/Controllers/mngtlogin.js/mngtlogin.js"></script>
+  <script src="../../assets/js/web/routes.js"></script>
+  <script src="../../js/bootstrap/bootstrap.min.js"></script>
+</body>.
+</html>

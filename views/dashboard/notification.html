@@ -13,6 +13,7 @@
     /> -->
     <link rel="stylesheet" href="../../assets/css/temp.css">
     <link rel="stylesheet" href="../../assets/css/projects.css" />
+    <link rel="stylesheet" href="/assets/css/notification.css">
 
     <script src="../../assets/js/auth/auth.js"></script>
 
@@ -78,9 +79,8 @@
                 <label for="recipient-name" class="col-form-label"
                   >Team</label
                 >
-                <!-- This receives list of teams from javascript file project.js[display projects function in project.js] -->
-                <select name="teams-dropdown" id="teamsListModal">
-                  
+                <select name="" id="teamsListModal">
+                  <option value="">hello</option>
                 </select>
               </div>
             </form>
@@ -96,7 +96,7 @@
         </div>
       </div>
     </div>
-      <!-- ######################[  NAVBAR STARTS HERE    ]########################### -->
+      <!-- navbar -->
       <nav class="navbar navbar-light bg-light flex-md-nowrap fixed-top  p-0 shadow-sm">
         <div class="">
           <div class="row">
@@ -131,7 +131,7 @@
               <a class="nav-link hover-border-bottom" href="activities.html">Activities</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hover-border-bottom" href="calender.html">Calender</a>
+              <a class="nav-link hover-border-bottom" href="./calender.html">Calender</a>
             </li>
             <li class="nav-item">
               <a class="nav-link hover-border-bottom" href="#">Files</a>
@@ -141,9 +141,9 @@
 
         </div>
       </nav>
-      <!-- ######################[  NAVBAR STARTS HERE    ]########################### -->
+      <!-- navbar ends -->
 
-            <!-- ######################[  SIDEBAR STARTS HERE    ]########################### -->
+      <!-- container -->
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-2 d-none d-md-block sidebar px-1">
@@ -201,14 +201,11 @@
               </div>
               <!--  -->
                 <div class="project-teams">
-                  <a class="menu-header text-white primary-options-color px-2 py-2 cursor-pointer d-flex flex-row justify-content-between " data-toggle="collapse" data-target="#teams-temp" aria-expanded="false" aria-controls="collapseExample">Teams <i class="fas fa-caret-down"></i></a>
+                  <a class="menu-header text-white primary-options-color px-2 py-2 cursor-pointer d-flex flex-row justify-content-between " data-toggle="collapse" data-target="#teams" aria-expanded="false" aria-controls="collapseExample">Teams <i class="fas fa-caret-down"></i></a>
                 </div>
-                <div class="collapse" id="teams-temp">
+                <div class="collapse" id="teams">
                   <ul class="nav flex-column">
-                    <div id="teamsSidebar">
-
-                    </div>
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                       <a class="nav-link active text-white" href="#"><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image my-1">Backend</i></a>
                     </li>
                     <li class="nav-item">
@@ -217,65 +214,41 @@
                     <li class="nav-item">
                       <a class="nav-link text-white" href="#"><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image my-1">Frontend</a>
                     </li>
-                    <a href="team.html"><div class="add-team-project primary-logo-color px-2"><small>+ Add a Team</small></div></a>
-                     -->
+                    <button onclick="addTeam()" class="add-team-project primary-logo-color px-2"><small>+ Add a Team</small></button>
+                    
                   </ul>
                 </div>
             </div>
             <div class="fixed-bottom">
-              <a href="team.html"><button type="button" class="btn btn-outline-light   btn-sm w-10 mx-2 my-3">Create Teams</button></a>
-              
+              <button type="button" class="btn btn-outline-light   btn-lg  mx-3 my-3">Invite Teams</button>
             </div>
+            <!--  -->
           </div>
-                <!-- ######################[  SIDEBAR ENDS HERE    ]########################### -->
 
-                      <!-- ######################[  MIN DASHBOARD AREA ENDS HERE    ]########################### -->
           <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-5">
             <div >
               
             
               <!-- project section -->
-              <section class="container projects-section p-3 my-2">
-              <div class="alert w-50" role="alert" id="projectAlert"></div>
-
-                <div class="project-welcome jumbotron my-4 p-3">
-                  <p class="heading-3 font-weight-normal text-default-color">
-                    Hello, <span id="helloUserName"></span>
-                  </p>
-                  <div class="lead bg-grey px-3 py-2 rounded">
-                    <p class="text-default-color">
-                      Welcome to BASCOM, you can start creating projects, add tasks and team
-                      members.
-                    </p>
-                    <p>Recent and all projects will be shown here.</p>
-                  </div>
-                </div>
-                <div class="projects-list">
-                  <div class="projects-list-header d-flex justify-content-between">
-                    <p class="text-default-color">Recents Projects</p>
-                    <small class="text-info"
-                      ><a href="" class="text-decoration-none text-default-color"
-                        >View all projects</a
-                      >
-                    </small>
-                  </div>
-                  <hr />
-                  <div id="showRecent"></div>
-                  <div class="projects-list-header d-flex justify-content-between">
-                    <p class="text-default-color">All Projects</p>
-                    <button
-                      class="btn btn-outline-secondary rounded-pill add-btn-color"
-                      type="button"
-                      data-toggle="modal"
-                      data-target="#staticBackdrop"
-                    >
-                      <span class="font-weight-bold">&#43;</span>
-                      New Project
-                    </button>
-                  </div>
-                  <hr />
-                  <div id="showAllProjects" class="d-flex"></div>
-                </div>
+              <section class="container p-3 my-2">
+                <div class="notify">
+                  <h3>NOTIFICATION</h3>
+                  <h5> You have Unread Notification</h5>
+                       <!-- this is where the dashboard components goes -->
+                       <div class="dashboard-body">
+                           <main class="internal-con">
+                              
+                               <main id="body-in">
+                                   <!-- displays tasks section -->
+                                   <div id="view-tasks"> </div>
+                               
+               
+                                   <!-- displays project section -->
+                                   <div id="projectName"> </div>
+                               </main>
+                           </main>
+                       </div>
+                   </div>
               </section>
             
               
@@ -329,7 +302,8 @@
 
 
 <script src="../../assets/js/sweetalert2.all.min.js"></script>
-
+<script src="/assets/js/notification.js"></script>
+<script src="/assets/js/notification2.js"></script>
     <script src="../../assets/js/Controllers/user.js"></script>
   <script src="../../assets/js/Controllers/project.js"></script>
   <script src="../../assets/js/Controllers/team.js"></script>
@@ -339,3 +313,99 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Notification</title>
+    <link rel="stylesheet" href="../../assets/css/sidebar.css">
+    <link rel="stylesheet" href="/assets/css/notification.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+<section id="body">
+<div class="wrapper">
+    <div class="sidebar">
+      <h2><span class='icon'></span>BASCOM</h2>
+
+      <div class="profile">
+        <img src="../../assets/img/Sophia.jpg" alt="Avatar" class="avatar"></img>
+        <div class="profile-info-group">
+          <p class="profile-name">Sophia Daniels</p>
+          <h6 class="profile-info primary-options-color">Product Manager</h6>
+        </div>
+        </div>
+
+        <div class="nav-list">
+       <div class="menu-header primary-options-color">MENU</div>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="./views/dashboard/taskoverview.html"><i class="fas fa-tasks"></i>My Tasks</a></li>
+            <li><a href="notification.html"><i class="fas fa-bell"></i>Notifications</a></li>
+        </ul> 
+
+    </div>
+
+    <div class="nav-list">
+        <div class="menu-header primary-options-color">PROJECTS</div>
+        <ul>
+            <li><a href="#"><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image">Pace Time Sheet</a></li>
+            <li><a href="#"><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image">Yellow Card System</a></li>
+            <li><a href="#"><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image">Chat App</a></li>
+            <li><a href="#"><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image">Project Management Tool</a></li>
+        </ul> 
+    
+        <div class="add-team-project primary-logo-color">+ Add a Project</div>
+
+      </div>
+
+        <div class="nav-list">
+        <div class="menu-header primary-options-color">TEAMS</div>
+        <ul>
+            <li><a href="#">Designers</a></li>
+            <li><a href="#">Backend</a></li>
+            <li><a href="#">Frontend</a></li>
+        </ul>
+
+        <div class="add-team-project primary-logo-color">+ Add a Team</div>
+        </div>
+
+        <div class="bottom-content">
+
+          <a class="primary-logo-color" href="#">Invite your team</a> and start collaborating!
+      </div>
+    </div>
+</div>
+
+   <div class="notify">
+    <h3>NOTIFICATION</h3>
+    <h5> You have Unread Notification</h5>
+         <!-- this is where the dashboard components goes -->
+         <div class="dashboard-body">
+             <main class="internal-con">
+                
+                 <main id="body-in">
+                     <!-- displays tasks section -->
+                     <div id="view-tasks"> </div>
+                 
+ 
+                     <!-- displays project section -->
+                     <div id="projectName"> </div>
+                 </main>
+             </main>
+         </div>
+     </div>
+    </section>
+<script src="/assets/js/notification.js"></script>
+<script src="/assets/js/notification2.js"></script>
+</body>
+</html> -->
+
+
+

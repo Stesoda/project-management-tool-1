@@ -10,6 +10,8 @@ if (projects == null || projects == undefined) {
   projects = [];
 }
 
+
+// TEAMS GOTTEN FROM LOCAL STORAGE
 teams = JSON.parse(localStorage.getItem("teams"));
 if (teams == null || teams == undefined) {
   teams = [];
@@ -31,20 +33,31 @@ if (tasks == null || tasks == undefined) {
 function displayProjects() {
   projectsPlaceholder = "";
   projectsSidebarPlaceholder = "";
-
-  if (projects == null || projects == undefined) {
-    projects = [];
-  }
+  teamsSidebarPlaceholder = "";
+  // if (projects == null || projects == undefined) {
+  //   projects = [];
+  // }
   
+  // This will append the team list to the modal of create project so that you can add team to project
   teamsPlaceholder = "";
-  console.log(teams)
+  // console.log(teams)
     for(i=0;i < teams.length; ++i){
         teamsPlaceholder += `
             <option id="${i}"  value="${teams[i].teamId}">${teams[i].teamName}</option>
-        `
+        `;
+        
+        teamsSidebarPlaceholder += `
+        <li class="nav-item" >
+            <a class="nav-link active text-white" href="#"><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image my-1">${teams[i].teamName}</a>
+        </li>
+      `;
     }
+    
     document.getElementById('teamsListModal').innerHTML = teamsPlaceholder
+    // console.log(document.getElementById('teamsSidebar'))
+    document.getElementById('teamsSidebar').innerHTML = teamsSidebarPlaceholder
 
+  // This displays all projects in the home of the dashboard(temp.html file)
   for (i = 0; i < projects.length; i++) {
     project = projects[i];
     if (project.userId == currentUser.id) {
@@ -66,6 +79,7 @@ function displayProjects() {
              <br>
         </div>`;
 
+      // This populates the sidebar of the home dashboard(check temp.html)
       projectsSidebarPlaceholder += `
         <li class="nav-item" onclick=openProject(${project.projectId})>
             <a class="nav-link active text-white" href="#"><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image my-1">${project.projectName}</a>
@@ -92,7 +106,9 @@ function addProject() {
     projectTeamId:document.getElementById('teamsListModal').value,
     projectDescription: document.getElementById("projectDescription").value,
     userId: currentUser.id,
+    teamsId:document.getElementById("teamsListModal").value
   };
+  
 
   projects.push(newProject);
 
@@ -102,7 +118,7 @@ function addProject() {
     JSON.stringify(newProject)
   );
 
-  users[currentUser.id].projects.push(newProject.projectId);
+  users[currentUser.id].projectsIdList.push(newProject.projectId);
   localStorage.setItem('users', JSON.stringify(users));
   location.href = "temp.html";
 }

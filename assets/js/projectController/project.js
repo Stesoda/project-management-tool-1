@@ -36,7 +36,6 @@ function displayProjects() {
   }
 
   teamsPlaceholder = "";
-  console.log(teams)
     for(i=0;i < teams.length; ++i){
         teamsPlaceholder += `
             <option id="${i}"  value="${teams[i].teamId}">${teams[i].teamName}</option>
@@ -76,13 +75,14 @@ function addProject() {
   for (let i = 0; i <= projects.length; i++) {
     projectId = i;
   }
-
+  // alert('how far',document.getElementById('teamsListModal').value)
   newProject = {
     projectId: projectId,
     projectName: document.getElementById("projectName").value,
     projectTeamId:document.getElementById('teamsListModal').value,
     projectDescription: document.getElementById("projectDescription").value,
     userId: currentUser.id,
+    teamsId:document.getElementById("teamsListModal").value
   };
 
   projects.push(newProject);

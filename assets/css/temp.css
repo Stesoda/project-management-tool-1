@@ -148,3 +148,7 @@ li a.nav-link.hover-border-bottom.active {
   border-bottom: 3px solid #ffc200 !important;
   border-block-end: #0099cc;
 }
+
+.w-10 {
+  width: 170px;
+}

@@ -1,0 +1,19 @@
+.logo {
+    width: 50px;
+}
+.logo-text {
+    font-size: 30px;
+    font-weight: 700;
+    color: #00465d;
+    margin-top: 0%;
+}
+.align {
+    margin: 0 auto;
+}
+.btn-custom {
+    background-color: #00465d;
+    color: #ffffff;
+}
+.font-size-custom {
+    font-size: 12px;
+}

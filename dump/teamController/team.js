@@ -27,7 +27,8 @@ function displayUsers(){
 
 //     // document.getElementById('showSelected').append(usersPlaceholder)
 // }
-    teamDisplayDiv =  document.getElementById("showSelected")
+teamDisplayDiv =  document.getElementById("showSelected")
+
 function addUp(e){
     
     displayDivChildren = teamDisplayDiv.children 
@@ -70,3 +71,41 @@ function createTeam(){
     localStorage.setItem('teams', JSON.stringify(teams))
     location.href="taskoverview.html"
 }
+
+
+function displayTeamMembers() {
+  let usersPlaceholder = "";
+
+  for (let i = 0; i < users.length; ++i) {
+    usersPlaceholder += `
+            <option id="${i}" onclick="addUp(event)" value="${users[i].firstName}">${users[i].firstName}</option>
+        `;
+  }
+  document.getElementById("assign-to").innerHTML = usersPlaceholder;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  displayTeamMembers();
+});
+
+// displaying selected users
+// var teamDisplayDiv = document.getElementById("selectedUsers");
+// function addUp(e) {
+//   let displayDivChildren = teamDisplayDiv.children;
+//   console.log(displayDivChildren);
+//   // console.log(e.target.selected,e.target.value)
+//   if (e.target.selected == true) {
+//     let innerDiv = document.createElement("span");
+//     innerDiv.id = "badge";
+//     document
+//       .getElementById("badge")
+//       .classList.add("badge badge-pill badge-secondary");
+//     console.log(e.target.selected);
+//     innerDiv.append(e.target.value);
+//     innerDiv.id = e.target.id;
+//     teamDisplayDiv.appendChild(innerDiv);
+//   } else {
+//     let toRemove = document.getElementById(e.target.id);
+//     teamDisplayDiv.removeChild(toRemove);
+//   }
+// }

@@ -13,11 +13,13 @@ var token = {
 
 // user array
 var userExist = new Object();
-var users = JSON.parse(localStorage.getItem("users"));
 
+// USERS FROM LOCALSTORAGE
+var users = JSON.parse(localStorage.getItem("users"));
 if (users == null || users == undefined) {
   users = [];
 }
+
 var saveDetails = JSON.parse(localStorage.getItem("saveDetails"));
 
 if (saveDetails == null || saveDetails == undefined) {
@@ -85,8 +87,9 @@ function register() {
           email: userEmail,
           password: userPassword,
           role: role,
-          projects:[],
-          tasks:[]
+          teamIdList:[],
+          tasksIdList:[],
+          projectsIdList:[]
         };
 
         passEmail = userEmail;
