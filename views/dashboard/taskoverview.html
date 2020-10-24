@@ -25,6 +25,69 @@
   </head>
 
     <body onload="displayTasksLists()">
+            <!-- Add create team Modal -->
+            <div
+            class="modal fade addProject"
+            id="createTeam"
+            data-backdrop="static"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-default-color" id="staticBackdropLabel">
+                    Add Project
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div id="showSelected" >
+                    
+                  </div>
+                  <form>
+                    
+                    <div class="form-group">
+                      <label for="usersList">Create a team</label>
+                      <select multiple class="form-control" name="users"
+                      id="usersList">
+                        No users found
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="teamName" class="col-form-label"
+                        >Team Name</label
+                      >
+                      <input
+                        type="text"
+                        name="teamName"
+                        placeholder="Enter Team Name"
+                        id="teamName"
+                        class="form-control"
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-primary" onclick="createTeam()">
+                    Create Team
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
       <!-- ############### [ MODAL FOR TO ADD TASK ] ########################-->
       <div
       class="modal fade addProject"
@@ -171,9 +234,8 @@
                 <span >
                 <li class="dropdown"><a class="dropdown-toggle ml-3" data-toggle="dropdown" href="#" id="DropdownProfile">...</a>
                   <ul class="dropdown-menu">
-                    <li class="mx-2"><a href="#" class="text-black">Profile</a></li>
-                    <li class="mx-2"><a href="#" class="text-black">Settings</a></li>
-                    <li class="mx-2" onclick="logout()"><a href="#" class="text-black" >Log Out</a></li>
+                    <li class="mx-2 text-decoration-none" ><a style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalLong"  class="text-black" onclick=editTrigger()>Profile settings</a></li>
+                    <li class="mx-2 text-decoration-none"><a style="cursor: pointer;" class="text-black" onclick="logout()">Log Out</a></li>
                   </ul>
                 </li>
               </span>
@@ -182,10 +244,10 @@
             </div>
               <ul class="nav flex-column sidehover">
                 <li class="nav-item">
-                  <a class="nav-link text-white hover-color active" href="temp.html"><i class="fas fa-home"></i>Home</a>
+                  <a class="nav-link text-white hover-color" href="temp.html"><i class="fas fa-home"></i>Home</a>
                 </li>
                 <li class="nav-item hover-color">
-                  <a class="nav-link text-white hover-color" href="taskoverview.html"><i class="fas fa-tasks"></i>Tasks</a>
+                  <a class="nav-link text-white hover-color active" href="taskoverview.html"><i class="fas fa-tasks"></i>Tasks</a>
                 </li>
                 <li class="nav-item hover-color">
                   <a class="nav-link text-white " href="notification.html"><i class="fas fa-bell"></i>Notification</a>
@@ -231,9 +293,10 @@
                 </div>
             </div>
               <!-- invite team -->
-            <div class="fixed-bottom">
-              <button type="button" class="btn btn-outline-light   btn-lg  mx-3 my-3">Create Teams</button>
-            </div>
+              <div class="fixed-bottom">
+                <a style="cursor: pointer;" data-toggle="modal" data-target="#createTeam"><button type="button" class="btn btn-outline-light   btn-sm w-10 mx-2 my-3">Create Teams</button></a>
+                
+              </div>
         
           </div>
               <!-- ###########################[ SIDEBAR ENDS HERE] ############################################# -->

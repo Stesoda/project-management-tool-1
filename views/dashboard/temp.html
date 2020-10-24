@@ -96,6 +96,69 @@
         </div>
       </div>
     </div>
+      <!-- Add create team Modal -->
+      <div
+      class="modal fade addProject"
+      id="createTeam"
+      data-backdrop="static"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-default-color" id="staticBackdropLabel">
+              Add Project
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="showSelected" >
+              
+            </div>
+            <form>
+              
+              <div class="form-group">
+                <label for="usersList">Create a team</label>
+                <select multiple class="form-control" name="users"
+                id="usersList">
+                  No users found
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="teamName" class="col-form-label"
+                  >Team Name</label
+                >
+                <input
+                  type="text"
+                  name="teamName"
+                  placeholder="Enter Team Name"
+                  id="teamName"
+                  class="form-control"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary" onclick="createTeam()">
+              Create Team
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
       <!-- ######################[  NAVBAR STARTS HERE    ]########################### -->
       <nav class="navbar navbar-light bg-light flex-md-nowrap fixed-top  p-0 shadow-sm">
         <div class="">
@@ -166,7 +229,7 @@
                 <li class="dropdown"><a class="dropdown-toggle ml-3" data-toggle="dropdown" href="#" id="DropdownProfile">...</a>
                   <ul class="dropdown-menu">
                     <li class="mx-2 text-decoration-none" ><a style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalLong"  class="text-black" onclick=editTrigger()>Profile settings</a></li>
-                    <li class="mx-2 text-decoration-none"><a class="text-black" onclick="logout()">Log Out</a></li>
+                    <li class="mx-2 text-decoration-none"><a style="cursor: pointer;" class="text-black" onclick="logout()">Log Out</a></li>
                   </ul>
                 </li>
               </span>
@@ -223,7 +286,7 @@
                 </div>
             </div>
             <div class="fixed-bottom">
-              <a href="team.html"><button type="button" class="btn btn-outline-light   btn-sm w-10 mx-2 my-3">Create Teams</button></a>
+              <a style="cursor: pointer;" data-toggle="modal" data-target="#createTeam"><button type="button" class="btn btn-outline-light   btn-sm w-10 mx-2 my-3">Create Teams</button></a>
               
             </div>
           </div>
@@ -251,6 +314,7 @@
                   </div>
                 </div>
                 <div class="projects-list">
+                  
                   <div class="projects-list-header d-flex justify-content-between">
                     <p class="text-default-color">Recents Projects</p>
                     <small class="text-info"
@@ -332,9 +396,9 @@
 
     <script src="../../assets/js/Controllers/user.js"></script>
   <script src="../../assets/js/Controllers/project.js"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="../../assets/js/Controllers/team.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
