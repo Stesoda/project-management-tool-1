@@ -21,7 +21,7 @@
     <title>Document</title>
   </head>
   <body>
-    <body onload="displayProjects()">
+    <body onload="displayProjects() ">
       <!-- Add Project Modal -->
       <div
       class="modal fade addProject"
@@ -165,13 +165,17 @@
           <div class="row">
             
             <ul class="navbar-nav px-3">
-              <div class="d-flex flex-row justify-content-end">
+              <div class="d-flex flex-row justify-content-end" id="team-members">
                   <!-- <span class="fas fa-search form-control-feedback"></span> -->
                   <input type="text" placeholder="Search..." class="form-control search"></input>
-                
+                <div id="team-images" >
+                  
                 <img src="../../assets/img/Onyedika.jpg" alt="Team member" class="picture">
                 <img src="../../assets/img/Chidinma.jpg" alt="Team member" class="picture">
                 <img src="../../assets/img/Sophia.jpg" alt="Team member" class="picture">
+                <img src="../../assets/img/Chidinma.jpg" alt="Team member" class="picture">
+                
+                </div>
               <button class="nav-btn badge badge-pill"><a  href="chat.html"><i class="fa fa-comments" >Chat</i></a></button>
               <button class="nav-btn badge badge-pill"><a  href="share.html"><i class="fa fa-comments" >Share</i></a></button>
               
@@ -253,7 +257,7 @@
               <div class="project-teams">
                 <a class="menu-header text-white px-2 py-2 cursor-pointer d-flex flex-row justify-content-between " data-toggle="collapse" data-target="#projects" aria-expanded="false" aria-controls="collapseExample">Projects <i class="fas fa-caret-down"></i></a>
               </div>
-              <div class="collapse" id="projects">
+              <div class="collapse" id="projecsts">
                 <ul class="nav flex-column">
                   <div id="projectsSidebar">
 

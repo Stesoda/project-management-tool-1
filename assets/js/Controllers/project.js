@@ -38,6 +38,7 @@ function displayProjects() {
   //   projects = [];
   // }
   
+  
   // This will append the team list to the modal of create project so that you can add team to project
   teamsPlaceholder = "";
   // console.log(teams)
@@ -47,15 +48,21 @@ function displayProjects() {
         `;
         
         teamsSidebarPlaceholder += `
-        <li class="nav-item" >
+        <li class="nav-item">
             <a class="nav-link active text-white" href="#"><img src="../../assets/img/project-icon.svg" alt="Project Image" class="project-image my-1">${teams[i].teamName}</a>
         </li>
       `;
+
+
     }
     
     document.getElementById('teamsListModal').innerHTML = teamsPlaceholder
     // console.log(document.getElementById('teamsSidebar'))
     document.getElementById('teamsSidebar').innerHTML = teamsSidebarPlaceholder
+
+  
+    
+ 
 
   // This displays all projects in the home of the dashboard(temp.html file)
   for (i = 0; i < projects.length; i++) {
@@ -133,6 +140,82 @@ function openProject(id) {
 }
 
 function displayName(params) {}
+
+
+//This will append images of registered users to the navigation bar
+function displayTeamImages() { 
+   
+ 
+    teamImagesPlaceholder= "";
+    //this loops through the existing users
+    for(i=0; i< users.length; i++){
+
+    // checks if existing users are not null or udefined then
+      if(users[i]!=null || users[i]!=undefined ){
+        
+        //
+        if(users ===3)
+        {
+          teamImagesPlaceholder +=`
+
+          <img src="${users[i].image}" alt="Team member" class="picture" id=${i}>`;
+        }
+        else{
+
+          teamImagesPlaceholder +=`
+         <div class="picture circle" >+${users.length-3}</div>
+          <img  src="${users[i].image}" alt="Team member" class="picture" id=${i}  onclick="displayRegUserDetails">`;
+
+        }
+      }
+     
+    }
+    //appends the images of existing users
+    document.getElementById("team-images").innerHTML=teamImagesPlaceholder; 
+
+  }
+
+  document.addEventListener("DOMContentLoaded", ()=>{ displayTeamImages()})
+  
+
+  // ################[ Untempered code below]####################################//
+  
+  // function displayTeamImages() {
+  
+
+  //   teamImagesPlaceholder= "";
+  
+  //   for(i=0; i< users.length; i++){
+  //     if(users[i]!=null || users[i]!=undefined ){
+        
+  //       if(users.length===3)
+  //       {
+  //         teamImagesPlaceholder +=`
+  
+  //         <img  src="${users[i].image}" alt="Team member" class="picture" id=${i}> `;
+  //       }
+  //       else{
+  
+  //         teamImagesPlaceholder +=`
+  
+  //         <img  src="${users[0].image}" alt="Team member" class="picture" id=${0}> 
+  //         <img  src="${users[1].image}" alt="Team member" class="picture" id=${1}> 
+  //         <img  src="${users[2].image}" alt="Team member" class="picture" id=${2}> 
+  //         <div class="picture circle" >${users.length-3}</div>`;
+  
+  //       }
+  //     }
+     
+  //   }
+    
+  //   document.getElementById("team-images").innerHTML=teamImagesPlaceholder; 
+  
+  // }
+  
+  // document.addEventListener("DOMContentLoaded", ()=>{ displayTeamImages()})
+
+
+
 
 
 

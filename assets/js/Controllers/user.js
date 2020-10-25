@@ -214,7 +214,9 @@ function login() {
   }
 }
 
-function getImage() {}
+function getImage() {
+  
+}
 
 /**
  * logs out a registered user
