@@ -10,6 +10,9 @@ var data = Tasks.map((task) => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  let CurrentUser = JSON.parse(localStorage.getItem("currentUser"));
+  document.getElementById("Avatar").src = `${CurrentUser.image}`;
+
   var calendarEl = document.getElementById("calendar");
 
   var calendar = new FullCalendar.Calendar(calendarEl, {

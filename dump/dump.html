@@ -916,3 +916,60 @@
   footer
   ----------------------*/ */
 </style>
+function ArrayChallenge(strArr) { 
+
+
+  // code goes here  
+
+//get values
+  let splitting = strArr[0].split("", 4).join("")
+  let nxtPart = strArr[0].split("").splice(4).join("")
+  
+  //create disctionary to find word
+  let dict = strArr[1].split(",")
+  //search dictionary
+  let possibleStr = dict.find((value)=>{
+    return value === splitting
+  })
+  //output
+  if(possibleStr === undefined){
+    return "not possible"
+  }
+  return `${possibleStr}, ${nxtPart}`; 
+
+}
+
+
+
+
+
+function ArrayChallenge(arr) { 
+// code goes here 
+  let arrObj = {}
+
+  arr.forEach((elem)=>{
+    if(!arrObj[elem]){
+      arrObj[elem] = 0;
+    }
+      arrObj[elem]++
+  })
+let result = []
+  for(let values in arrObj){
+    result.push([values, arrObj[values]])
+  }
+  const sortCheck = el => result.indexOf(el) !== -1 && arr.indexOf(el) !== -1
+  const sort = (a,b)=>{
+    if(sortCheck(a) && sortCheck(b)){
+      return result.indexOf(a) - arr.indexOf(b)
+    }
+    if(sortCheck(a)) -1
+    if (sortCheck(b)) 1
+
+    0
+  }
+  result.sort(sort);
+  
+}
+   
+// keep this function call here 
+console.log(ArrayChallenge(readline()));

@@ -1,0 +1,570 @@
+*   [33mbfb058f[m[33m ([m[1;36mHEAD -> [m[1;32mtemp[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m search.js update
+[31m|[m[32m\[m  
+[31m|[m * [33m24aa66b[m Update search.js
+* [32m|[m [33m20f4557[m search function update
+[33m|[m[32m\[m[32m|[m 
+[33m|[m * [33m9cb4384[m search update
+[33m|[m * [33m149ed03[m search update
+[33m|[m * [33me2365d8[m Update search function
+[33m|[m * [33m518351c[m Update
+[33m|[m * [33md35cbe7[m removed Dashboard.css
+[33m|[m * [33ma89f223[m search function update
+[33m|[m * [33m2783965[m search bar function update
+[33m|[m * [33m4cbdbb9[m search function update
+[33m|[m * [33mb3bdb5f[m Search function Update
+[33m|[m * [33m259acea[m search bar function update
+[33m|[m *   [33md9393dc[m Merge branch 'master' of https://github.com/eonyedikachi/project-management-tool-1 into master
+[33m|[m [35m|[m[36m\[m  
+[33m|[m [35m|[m *   [33mb82e9bd[m Merge branch 'master' of https://github.com/eonyedikachi/project-management-tool-1 into master
+[33m|[m [35m|[m [1;31m|[m[1;32m\[m  
+[33m|[m [35m|[m [1;31m|[m *   [33m57bf3c2[m Merge branch 'master' of https://github.com/eonyedikachi/project-management-tool-1 into master
+[33m|[m [35m|[m [1;31m|[m [1;33m|[m[1;34m\[m  
+[33m|[m [35m|[m [1;31m|[m [1;33m|[m *   [33m42a4002[m Merge branch 'master' of https://github.com/eonyedikachi/project-management-tool-1 into master
+[33m|[m [35m|[m [1;31m|[m [1;33m|[m [1;35m|[m[1;36m\[m  
+[33m|[m [35m|[m [1;31m|[m [1;33m|[m [1;35m|[m *   [33m1014182[m Merge pull request #8 from rolteame/master
+[33m|[m [35m|[m [1;31m|[m [1;33m|[m [1;35m|[m [31m|[m[32m\[m  
+* [35m|[m [1;31m|[m [1;33m|[m [1;35m|[m [31m|[m [32m|[m [33m0180665[m search bar function update
+* [35m|[m [1;31m|[m [1;33m|[m [1;35m|[m [31m|[m [32m|[m [33m8d2b265[m search function update
+* [35m|[m [1;31m|[m [1;33m|[m [1;35m|[m [31m|[m [32m|[m [33m531d2b7[m Update search funcion
+* [35m|[m [1;31m|[m [1;33m|[m [1;35m|[m [31m|[m [32m|[m [33m22f67b7[m Search function Update
+* [35m|[m [1;31m|[m [1;33m|[m [1;35m|[m [31m|[m [32m|[m [33m5528fb2[m search bar function update
+* [35m|[m [1;31m|[m [1;33m|[m [1;35m|[m [31m|[m [32m|[m [33m5dfdba9[m[33m ([m[1;31mupstream/master[m[33m)[m bug fixes
+* [35m|[m [1;31m|[m [1;33m|[m [1;35m|[m [31m|[m [32m|[m [33m8e41d64[m bug fixes
+* [35m|[m [1;31m|[m [1;33m|[m [1;35m|[m [31m|[m [32m|[m   [33mba51592[m Merge branch 'chibeke-dev-master'
+[33m|[m[34m\[m [35m\[m [1;31m\[m [1;33m\[m [1;35m\[m [31m\[m [32m\[m  
+[33m|[m * [35m|[m [1;31m|[m [1;33m|[m [1;35m|[m [31m|[m [32m|[m [33m333b7f1[m updates
+[33m|[m[33m/[m [35m/[m [1;31m/[m [1;33m/[m [1;35m/[m [31m/[m [32m/[m  
+* [35m|[m [1;31m|[m [1;33m|[m [1;35m|[m [31m|[m [32m|[m [33m58535b3[m Color consistence adjustments
+* [35m|[m [1;31m|[m [1;33m|[m [1;35m|[m [31m|[m [32m|[m [33m7656612[m display images bug fixes
+[35m|[m[35m/[m [1;31m/[m [1;33m/[m [1;35m/[m [31m/[m [32m/[m  
+* [1;31m|[m [1;33m|[m [1;35m|[m [31m|[m [32m|[m   [33m4981c99[m Merge pull request #54 from rolteame/advancebranch
+[35m|[m[36m\[m [1;31m\[m [1;33m\[m [1;35m\[m [31m\[m [32m\[m  
+[35m|[m * [1;31m\[m [1;33m\[m [1;35m\[m [31m\[m [32m\[m   [33m588e88e[m Merge pull request #53 from Stesoda/advancebranch
+[35m|[m [1;31m|[m[1;32m\[m [1;31m\[m [1;33m\[m [1;35m\[m [31m\[m [32m\[m  
+[35m|[m [1;31m|[m [1;32m|[m[1;31m/[m [1;33m/[m [1;35m/[m [31m/[m [32m/[m  
+[35m|[m [1;31m|[m[1;31m/[m[1;32m|[m [1;33m|[m [1;35m|[m [31m|[m [32m|[m   
+[35m|[m [1;31m|[m * [1;33m|[m [1;35m|[m [31m|[m [32m|[m [33mf517584[m added function to display images of registered users on the nav bar
+[35m|[m [1;31m|[m * [1;33m|[m [1;35m|[m [31m|[m [32m|[m   [33m08e70ab[m Merge branch 'advancebranch' of https://github.com/Stesoda/project-management-tool-1 into advancebranch
+[35m|[m [1;31m|[m [1;33m|[m[1;34m\[m [1;33m\[m [1;35m\[m [31m\[m [32m\[m  
+[35m|[m [1;31m|[m [1;33m|[m * [1;33m\[m [1;35m\[m [31m\[m [32m\[m   [33mca86b2f[m Merge pull request #6 from rolteame/advancebranch
+[35m|[m [1;31m|[m [1;33m|[m [1;35m|[m[1;31m\[m [1;33m\[m [1;35m\[m [31m\[m [32m\[m  
+[35m|[m [1;31m|[m [1;33m|[m[1;31m_[m[1;35m|[m[1;31m/[m [1;33m/[m [1;35m/[m [31m/[m [32m/[m  
+[35m|[m [1;31m|[m[1;31m/[m[1;33m|[m [1;35m|[m [1;33m|[m [1;35m|[m [31m|[m [32m|[m   
+[35m|[m * [1;33m|[m [1;35m|[m [1;33m|[m [1;35m|[m [31m|[m [32m|[m   [33m16bd936[m Merge pull request #52 from rolteame/master
+[35m|[m [31m|[m[1;33m\[m [1;33m\[m [1;35m\[m [1;33m\[m [1;35m\[m [31m\[m [32m\[m  
+[35m|[m [31m|[m [1;33m|[m [1;33m|[m[1;33m_[m[1;35m|[m[1;33m/[m [1;35m/[m [31m/[m [32m/[m  
+[35m|[m [31m|[m [1;33m|[m[1;33m/[m[1;33m|[m [1;35m|[m [1;35m|[m [31m|[m [32m|[m   
+[35m|[m * [1;33m|[m [1;33m|[m [1;35m|[m [1;35m|[m [31m|[m [32m|[m   [33m9269ea2[m Merge pull request #51 from rolteame/master
+[35m|[m [33m|[m[34m\[m [1;33m\[m [1;33m\[m [1;35m\[m [1;35m\[m [31m\[m [32m\[m  
+[35m|[m [33m|[m [34m|[m [1;33m|[m [1;33m|[m * [1;35m\[m [31m\[m [32m\[m   [33m37c2ce7[m Merge pull request #4 from rolteame/advancebranch
+[35m|[m [33m|[m [34m|[m [1;33m|[m [1;33m|[m [35m|[m[33m\[m [1;35m\[m [31m\[m [32m\[m  
+[35m|[m [33m|[m [34m|[m[33m_[m[1;33m|[m[33m_[m[1;33m|[m[33m_[m[35m|[m[33m/[m [1;35m/[m [31m/[m [32m/[m  
+[35m|[m [33m|[m[33m/[m[34m|[m [1;33m|[m [1;33m|[m [35m|[m [1;35m|[m [31m|[m [32m|[m   
+[35m|[m [33m|[m [34m|[m [1;33m|[m * [35m|[m [1;35m|[m [31m|[m [32m|[m [33m4bd5f10[m fixed broken links
+[35m|[m [33m|[m [34m|[m [1;33m|[m [35m|[m[35m/[m [1;35m/[m [31m/[m [32m/[m  
+[35m|[m [33m|[m [34m|[m [1;33m|[m * [1;35m|[m [31m|[m [32m|[m   [33m4694ca0[m Merge pull request #3 from rolteame/master
+[35m|[m [33m|[m [34m|[m [1;33m|[m [1;31m|[m[1;32m\[m [1;35m\[m [31m\[m [32m\[m  
+[35m|[m [33m|[m [34m|[m [1;33m|[m * [1;32m\[m [1;35m\[m [31m\[m [32m\[m   [33m8b860ce[m Merge pull request #2 from rolteame/advancebranch
+[35m|[m [33m|[m [34m|[m [1;33m|[m [1;33m|[m[1;34m\[m [1;32m\[m [1;35m\[m [31m\[m [32m\[m  
+[35m|[m [33m|[m [34m|[m [1;33m|[m * [1;34m|[m [1;32m|[m [1;35m|[m [31m|[m [32m|[m [33mcc45e0f[m updating my local repo
+* [33m|[m [34m|[m [1;33m|[m [1;34m|[m [1;34m|[m [1;32m|[m [1;35m|[m [31m|[m [32m|[m   [33m21c6fe4[m Merge branch 'master' of https://github.com/rolteame/project-management-tool-1 into master
+[1;35m|[m[1;33m\[m [33m\[m [34m\[m [1;33m\[m [1;34m\[m [1;34m\[m [1;32m\[m [1;35m\[m [31m\[m [32m\[m  
+[1;35m|[m [1;33m|[m [33m|[m[1;33m_[m[34m|[m[1;33m/[m [1;34m/[m [1;34m/[m [1;32m/[m [1;35m/[m [31m/[m [32m/[m  
+[1;35m|[m [1;33m|[m[1;33m/[m[33m|[m [34m|[m [1;34m|[m [1;34m|[m [1;32m|[m [1;35m|[m [31m|[m [32m|[m   
+[1;35m|[m * [33m|[m [34m|[m [1;34m|[m [1;34m|[m [1;32m|[m [1;35m|[m [31m|[m [32m|[m [33mc6e0e70[m Activites UI updates
+[1;35m|[m [34m|[m [33m|[m[34m/[m [1;34m/[m [1;34m/[m [1;32m/[m [1;35m/[m [31m/[m [32m/[m  
+[1;35m|[m [34m|[m[34m/[m[33m|[m [1;34m|[m [1;34m|[m [1;32m|[m [1;35m|[m [31m|[m [32m|[m   
+[1;35m|[m * [33m|[m [1;34m|[m [1;34m|[m [1;32m|[m [1;35m|[m [31m|[m [32m|[m [33me1587da[m UI updates
+[1;35m|[m * [33m|[m [1;34m|[m [1;34m|[m [1;32m|[m [1;35m|[m [31m|[m [32m|[m [33md0e09b7[m bug fixes
+[1;35m|[m * [33m|[m [1;34m|[m [1;34m|[m [1;32m|[m [1;35m|[m [31m|[m [32m|[m   [33m7f12812[m Merge branch 'master' of https://github.com/rolteame/project-management-tool-1
+[1;35m|[m [31m|[m[32m\[m [33m\[m [1;34m\[m [1;34m\[m [1;32m\[m [1;35m\[m [31m\[m [32m\[m  
+[1;35m|[m [31m|[m * [33m|[m [1;34m|[m [1;34m|[m [1;32m|[m [1;35m|[m [31m|[m [32m|[m [33m2f3f35a[m Merge pull request #50 from rolteame/advancebranch
+[1;35m|[m [31m|[m [1;35m|[m[33m\[m[33m|[m [1;34m|[m [1;34m|[m [1;32m|[m [1;35m|[m [31m|[m [32m|[m 
+[1;35m|[m [31m|[m [1;35m|[m [33m|[m[1;35m_[m[1;34m|[m[1;35m_[m[1;34m|[m[1;35m_[m[1;32m|[m[1;35m/[m [31m/[m [32m/[m  
+[1;35m|[m [31m|[m [1;35m|[m[1;35m/[m[33m|[m [1;34m|[m [1;34m|[m [1;32m|[m [31m|[m [32m|[m   
+[1;35m|[m [31m|[m [1;35m|[m * [1;34m|[m [1;34m|[m [1;32m|[m [31m|[m [32m|[m   [33m33a8cd9[m Merge pull request #49 from bankymono/advancebranch
+[1;35m|[m [31m|[m [1;35m|[m [1;34m|[m[36m\[m [1;34m\[m [1;34m\[m [1;32m\[m [31m\[m [32m\[m  
+[1;35m|[m [31m|[m [1;35m|[m [1;34m|[m [36m|[m[1;34m_[m[1;34m|[m[1;34m/[m [1;32m/[m [31m/[m [32m/[m  
+[1;35m|[m [31m|[m [1;35m|[m [1;34m|[m[1;34m/[m[36m|[m [1;34m|[m [1;32m|[m [31m|[m [32m|[m   
+[1;35m|[m [31m|[m [1;35m|[m [1;34m|[m * [1;34m|[m [1;32m|[m [31m|[m [32m|[m [33m4ce822b[m Tasks page functionalities
+[1;35m|[m [31m|[m [1;35m|[m [1;34m|[m[1;35m/[m [1;34m/[m [1;32m/[m [31m/[m [32m/[m  
+[1;35m|[m [31m|[m [1;35m|[m[1;35m/[m[1;34m|[m [1;34m|[m [1;32m|[m [31m|[m [32m|[m   
+[1;35m|[m * [1;35m/[m [1;34m|[m [1;34m|[m [1;32m|[m [31m|[m [32m|[m [33mbf68220[m Styling updates
+[1;35m|[m [1;35m|[m[1;35m/[m [1;34m/[m [1;34m/[m [1;32m/[m [31m/[m [32m/[m  
+* [1;35m/[m [1;34m/[m [1;34m/[m [1;32m/[m [31m/[m [32m/[m [33m4f5ea57[m user management
+[1;35m|[m[1;35m/[m [1;34m/[m [1;34m/[m [1;32m/[m [31m/[m [32m/[m  
+* [1;34m|[m [1;34m|[m [1;32m|[m [31m|[m [32m|[m   [33m316a410[m Merge branch 'master' of https://github.com/rolteame/project-management-tool-1
+[1;31m|[m[1;32m\[m [1;34m\[m [1;34m\[m [1;32m\[m [31m\[m [32m\[m  
+[1;31m|[m * [1;34m|[m [1;34m|[m [1;32m|[m [31m|[m [32m|[m [33me2ccf16[m mangt console
+* [1;32m|[m [1;34m|[m [1;34m|[m [1;32m|[m [31m|[m [32m|[m [33mb58f22c[m Console updates
+[1;32m|[m[1;32m/[m [1;34m/[m [1;34m/[m [1;32m/[m [31m/[m [32m/[m  
+* [1;34m|[m [1;34m|[m [1;32m/[m [31m/[m [32m/[m [33m4d96f47[m Major bug fixes
+[1;32m|[m [1;34m|[m[1;32m_[m[1;34m|[m[1;32m/[m [31m/[m [32m/[m  
+[1;32m|[m[1;32m/[m[1;34m|[m [1;34m|[m [31m|[m [32m|[m   
+* [1;34m|[m [1;34m|[m [31m|[m [32m|[m [33me3f8462[m Merge pull request #47 from rolteame/advancebranch
+[1;33m|[m[1;34m\[m[1;34m|[m [1;34m|[m [31m|[m [32m|[m 
+[1;33m|[m * [1;34m|[m [31m|[m [32m|[m   [33mc92ad36[m Merge pull request #46 from eonyedikachi/advancebranch
+[1;33m|[m [1;35m|[m[1;36m\[m [1;34m\[m [31m\[m [32m\[m  
+[1;33m|[m [1;35m|[m * [1;34m|[m [31m|[m [32m|[m [33m2b62410[m Task
+[1;33m|[m [1;35m|[m * [1;34m|[m [31m|[m [32m|[m [33m2645e45[m Tasks@
+[1;33m|[m [1;35m|[m * [1;34m|[m [31m|[m [32m|[m   [33m71e3f8d[m Update
+[1;33m|[m [1;35m|[m [31m|[m[32m\[m [1;34m\[m [31m\[m [32m\[m  
+[1;33m|[m [1;35m|[m * [32m|[m [1;34m|[m [31m|[m [32m|[m [33m5644cc9[m Tasks
+[1;33m|[m [1;35m|[m * [32m|[m [1;34m|[m [31m|[m [32m|[m [33m4e7c851[m Project and Task section issues resolved
+[1;33m|[m [1;35m|[m * [32m|[m [1;34m|[m [31m|[m [32m|[m   [33m8ab9d8e[m Merge branch 'advancebranch' of https://github.com/eonyedikachi/project-management-tool-1 into advancebranch
+[1;33m|[m [1;35m|[m [33m|[m[34m\[m [32m\[m [1;34m\[m [31m\[m [32m\[m  
+[1;33m|[m [1;35m|[m [33m|[m * [32m|[m [1;34m|[m [31m|[m [32m|[m [33m0d9c359[m Update Task Script
+[1;33m|[m [1;35m|[m * [34m|[m [32m|[m [1;34m|[m [31m|[m [32m|[m [33m3b9884c[m Update Task Script
+[1;33m|[m [1;35m|[m [1;34m|[m [34m|[m[1;34m_[m[32m|[m[1;34m/[m [31m/[m [32m/[m  
+[1;33m|[m [1;35m|[m [1;34m|[m[1;34m/[m[34m|[m [32m|[m [31m|[m [32m|[m   
+[1;33m|[m * [1;34m|[m [34m|[m [32m|[m [31m|[m [32m|[m   [33m8de9a58[m Merge pull request #45 from rolteame/master
+[1;33m|[m [35m|[m[1;33m\[m [1;34m\[m [34m\[m [32m\[m [31m\[m [32m\[m  
+[1;33m|[m [35m|[m[1;33m/[m [1;34m/[m [34m/[m [32m/[m [31m/[m [32m/[m  
+[1;33m|[m[1;33m/[m[35m|[m [1;34m|[m [34m|[m [32m|[m [31m|[m [32m|[m   
+* [35m|[m [1;34m|[m [34m|[m [32m|[m [31m|[m [32m|[m   [33mc79aa48[m Merge pull request #40 from chibeke-dev/master
+[1;31m|[m[1;32m\[m [35m\[m [1;34m\[m [34m\[m [32m\[m [31m\[m [32m\[m  
+[1;31m|[m * [35m\[m [1;34m\[m [34m\[m [32m\[m [31m\[m [32m\[m   [33m003da87[m Merge branch 'master' of https://github.com/chibeke-dev/project-management-tool-1 into master
+[1;31m|[m [1;33m|[m[1;34m\[m [35m\[m [1;34m\[m [34m\[m [32m\[m [31m\[m [32m\[m  
+[1;31m|[m * [1;34m|[m [35m|[m [1;34m|[m [34m|[m [32m|[m [31m|[m [32m|[m [33m904f0f5[m Sidebar notification
+[1;31m|[m [1;34m|[m [1;34m|[m * [1;34m|[m [34m|[m [32m|[m [31m|[m [32m|[m   [33ma18fc2c[m Merge pull request #44 from rolteame/master
+[1;31m|[m [1;34m|[m [1;34m|[m [32m|[m[1;31m\[m [1;34m\[m [34m\[m [32m\[m [31m\[m [32m\[m  
+[1;31m|[m [1;34m|[m[1;31m_[m[1;34m|[m[1;31m_[m[32m|[m[1;31m/[m [1;34m/[m [34m/[m [32m/[m [31m/[m [32m/[m  
+[1;31m|[m[1;31m/[m[1;34m|[m [1;34m|[m [32m|[m [1;34m|[m [34m|[m [32m/[m [31m/[m [32m/[m   
+[1;31m|[m [1;34m|[m [1;34m|[m [32m|[m [1;34m|[m[32m_[m[34m|[m[32m/[m [31m/[m [32m/[m    
+[1;31m|[m [1;34m|[m [1;34m|[m [32m|[m[32m/[m[1;34m|[m [34m|[m [31m|[m [32m|[m     
+* [1;34m|[m [1;34m|[m [32m|[m [1;34m|[m [34m|[m [31m|[m [32m|[m [33m1c556dd[m calender bug fixes
+[32m|[m [1;34m|[m[32m_[m[1;34m|[m[32m_[m[32m|[m[32m_[m[1;34m|[m[32m_[m[34m|[m[32m_[m[31m|[m[32m/[m  
+[32m|[m[32m/[m[1;34m|[m [1;34m|[m [32m|[m [1;34m|[m [34m|[m [31m|[m   
+* [1;34m|[m [1;34m|[m [32m|[m [1;34m|[m [34m|[m [31m|[m   [33madb8cdf[m Merge pull request #42 from rolteame/advancebranch
+[31m|[m[32m\[m [1;34m\[m [1;34m\[m [32m\[m [1;34m\[m [34m\[m [31m\[m  
+[31m|[m [32m|[m [1;34m|[m[32m_[m[1;34m|[m[32m/[m [1;34m/[m [34m/[m [31m/[m  
+[31m|[m [32m|[m[32m/[m[1;34m|[m [1;34m|[m [1;34m|[m [34m|[m [31m|[m   
+[31m|[m * [1;34m|[m [1;34m|[m [1;34m|[m [34m|[m [31m|[m   [33m3289db1[m Merge pull request #43 from rolteame/master
+[31m|[m [1;34m|[m[31m\[m [1;34m\[m [1;34m\[m [1;34m\[m [34m\[m [31m\[m  
+[31m|[m [1;34m|[m[31m/[m [1;34m/[m [1;34m/[m [1;34m/[m [34m/[m [31m/[m  
+[31m|[m[31m/[m[1;34m|[m [1;34m|[m [1;34m|[m [1;34m/[m [34m/[m [31m/[m   
+[31m|[m [1;34m|[m [1;34m|[m[1;34m_[m[1;34m|[m[1;34m/[m [34m/[m [31m/[m    
+[31m|[m [1;34m|[m[1;34m/[m[1;34m|[m [1;34m|[m [34m|[m [31m|[m     
+* [1;34m|[m [1;34m|[m [1;34m|[m [34m|[m [31m|[m [33m412d34e[m bug fixes
+* [1;34m|[m [1;34m|[m [1;34m|[m [34m|[m [31m|[m   [33me2fa24b[m Merge branch 'master' of https://github.com/rolteame/project-management-tool-1
+[35m|[m[31m\[m [1;34m\[m [1;34m\[m [1;34m\[m [34m\[m [31m\[m  
+[35m|[m [31m|[m [1;34m|[m[31m_[m[1;34m|[m[31m_[m[1;34m|[m[31m_[m[34m|[m[31m/[m  
+[35m|[m [31m|[m[31m/[m[1;34m|[m [1;34m|[m [1;34m|[m [34m|[m   
+* [31m|[m [1;34m|[m [1;34m|[m [1;34m|[m [34m|[m [33mee228e8[m newer version
+[36m|[m [31m|[m * [1;34m|[m [1;34m|[m [34m|[m   [33md4f20ae[m Merge pull request #39 from rolteame/master
+[36m|[m [31m|[m [1;31m|[m[31m\[m [1;34m\[m [1;34m\[m [34m\[m  
+[36m|[m [31m|[m [1;31m|[m[31m/[m [1;34m/[m [1;34m/[m [34m/[m  
+[36m|[m [31m|[m[31m/[m[1;31m|[m [1;34m|[m [1;34m|[m [34m|[m   
+[36m|[m * [1;31m|[m [1;34m|[m [1;34m|[m [34m|[m [33mfc6764f[m Merge pull request #38 from rolteame/advancebranch
+[36m|[m [1;33m|[m[1;31m\[m[1;31m|[m [1;34m|[m [1;34m|[m [34m|[m 
+[36m|[m [1;33m|[m * [1;34m|[m [1;34m|[m [34m|[m   [33m32f1680[m Merge pull request #37 from bankymono/advancebranch
+[36m|[m [1;33m|[m [34m|[m[1;36m\[m [1;34m\[m [1;34m\[m [34m\[m  
+[36m|[m [1;33m|[m [34m|[m [1;36m|[m[34m_[m[1;34m|[m[34m_[m[1;34m|[m[34m/[m  
+[36m|[m [1;33m|[m [34m|[m[34m/[m[1;36m|[m [1;34m|[m [1;34m|[m   
+[36m|[m [1;33m|[m [34m|[m * [1;34m|[m [1;34m|[m [33mbe2efc2[m implemented feature to populate users with their projects
+[36m|[m [1;33m|[m [34m|[m[34m/[m [1;34m/[m [1;34m/[m  
+[36m|[m [1;33m|[m * [1;34m|[m [1;34m|[m   [33mf4887d6[m Merge pull request #35 from Stesoda/advancebranch
+[36m|[m [1;33m|[m [31m|[m[32m\[m [1;34m\[m [1;34m\[m  
+[36m|[m [1;33m|[m [31m|[m * [1;34m|[m [1;34m|[m [33mcf96d34[m Invite teams modification-1
+[36m|[m [1;33m|[m [31m|[m[31m/[m [1;34m/[m [1;34m/[m  
+[36m|[m [1;33m|[m * [1;34m|[m [1;34m|[m   [33m8b3fb1e[m Merge pull request #34 from rolteame/master
+[36m|[m [1;33m|[m [33m|[m[34m\[m [1;34m\[m [1;34m\[m  
+[36m|[m * [33m|[m [34m|[m [1;34m|[m [1;34m|[m [33m68bb2df[m Merge pull request #15 from chibeke-dev/master
+[36m|[m[36m/[m[1;34m|[m [33m|[m [34m|[m [1;34m|[m [1;34m|[m 
+[36m|[m [1;34m|[m [33m|[m[1;34m_[m[34m|[m[1;34m_[m[1;34m|[m[1;34m/[m  
+[36m|[m [1;34m|[m[1;34m/[m[33m|[m [34m|[m [1;34m|[m   
+[36m|[m * [33m|[m [34m|[m [1;34m|[m   [33mb95d01d[m Merge branch 'advance' into master
+[36m|[m [1;34m|[m[1;32m\[m [33m\[m [34m\[m [1;34m\[m  
+[36m|[m [1;34m|[m [1;32m|[m[1;34m_[m[33m|[m[1;34m_[m[34m|[m[1;34m/[m  
+[36m|[m [1;34m|[m[1;34m/[m[1;32m|[m [33m|[m [34m|[m   
+[36m|[m [1;34m|[m * [33m|[m [34m|[m   [33md637504[m Merge pull request #33 from eonyedikachi/advance
+[36m|[m [1;34m|[m [1;33m|[m[1;34m\[m [33m\[m [34m\[m  
+[36m|[m [1;34m|[m [1;33m|[m * [33m|[m [34m|[m [33m59ae4b7[m Merge branch 'advancebranch' into advance
+[36m|[m [1;34m|[m [1;33m|[m[1;33m/[m[1;36m|[m [33m|[m [34m|[m 
+[36m|[m [1;34m|[m * [1;36m|[m [33m|[m [34m|[m   [33m7216448[m Merge pull request #23 from eonyedikachi/advance
+[36m|[m [1;34m|[m [31m|[m[32m\[m [1;36m\[m [33m\[m [34m\[m  
+[36m|[m * [31m|[m [32m|[m [1;36m|[m [33m|[m [34m|[m [33md999196[m Notification
+[36m|[m * [31m|[m [32m|[m [1;36m|[m [33m|[m [34m|[m [33mc8a23a3[m loader confiltt
+[36m|[m * [31m|[m [32m|[m [1;36m|[m [33m|[m [34m|[m   [33m685dd0d[m loader cont
+[36m|[m [33m|[m[34m\[m [31m\[m [32m\[m [1;36m\[m [33m\[m [34m\[m  
+[36m|[m * [34m\[m [31m\[m [32m\[m [1;36m\[m [33m\[m [34m\[m   [33mbe83eab[m loader conflict
+[36m|[m [35m|[m[36m\[m [34m\[m [31m\[m [32m\[m [1;36m\[m [33m\[m [34m\[m  
+[36m|[m * [36m|[m [34m|[m [31m|[m [32m|[m [1;36m|[m [33m|[m [34m|[m [33m4695771[m Loader section
+[36m|[m * [36m|[m [34m|[m [31m|[m [32m|[m [1;36m|[m [33m|[m [34m|[m [33ma34a192[m header
+* [36m|[m [36m|[m [34m|[m [31m|[m [32m|[m [1;36m|[m [33m|[m [34m|[m [33m78f11a2[m link corrections
+[34m|[m [36m|[m[34m_[m[36m|[m[34m_[m[34m|[m[34m_[m[31m|[m[34m_[m[32m|[m[34m_[m[1;36m|[m[34m_[m[33m|[m[34m/[m  
+[34m|[m[34m/[m[36m|[m [36m|[m [34m|[m [31m|[m [32m|[m [1;36m|[m [33m|[m   
+* [36m|[m [36m|[m [34m|[m [31m|[m [32m|[m [1;36m|[m [33m|[m   [33m5ccffee[m Merge pull request #32 from eonyedikachi/master
+[1;31m|[m[1;32m\[m [36m\[m [36m\[m [34m\[m [31m\[m [32m\[m [1;36m\[m [33m\[m  
+[1;31m|[m * [36m|[m [36m|[m [34m|[m [31m|[m [32m|[m [1;36m|[m [33m|[m [33mbd97c81[m Project button issue fixed
+[1;31m|[m * [36m|[m [36m|[m [34m|[m [31m|[m [32m|[m [1;36m|[m [33m|[m   [33m9ccbb1d[m Merge branch 'master' of https://github.com/rolteame/project-management-tool-1 into master
+[1;31m|[m [1;33m|[m[1;31m\[m [36m\[m [36m\[m [34m\[m [31m\[m [32m\[m [1;36m\[m [33m\[m  
+[1;31m|[m [1;33m|[m[1;31m/[m [36m/[m [36m/[m [34m/[m [31m/[m [32m/[m [1;36m/[m [33m/[m  
+[1;31m|[m[1;31m/[m[1;33m|[m [36m|[m [36m|[m [34m|[m [31m|[m [32m|[m [1;36m|[m [33m|[m   
+* [1;33m|[m [36m|[m [36m|[m [34m|[m [31m|[m [32m|[m [1;36m|[m [33m|[m   [33mdd8db5d[m Merge pull request #31 from rolteame/advancebranch
+[1;35m|[m[33m\[m [1;33m\[m [36m\[m [36m\[m [34m\[m [31m\[m [32m\[m [1;36m\[m [33m\[m  
+[1;35m|[m [33m|[m [1;33m|[m[33m_[m[36m|[m[33m_[m[36m|[m[33m_[m[34m|[m[33m_[m[31m|[m[33m_[m[32m|[m[33m_[m[1;36m|[m[33m/[m  
+[1;35m|[m [33m|[m[33m/[m[1;33m|[m [36m|[m [36m|[m [34m|[m [31m|[m [32m|[m [1;36m|[m   
+[1;35m|[m * [1;33m|[m [36m|[m [36m|[m [34m|[m [31m|[m [32m|[m [1;36m|[m   [33m19bce91[m Merge pull request #30 from eonyedikachi/advancebranch
+[1;35m|[m [31m|[m[32m\[m [1;33m\[m [36m\[m [36m\[m [34m\[m [31m\[m [32m\[m [1;36m\[m  
+[1;35m|[m [31m|[m * [1;33m|[m [36m|[m [36m|[m [34m|[m [31m|[m [32m|[m [1;36m|[m [33m03c907b[m Merge branch 'advancebranch' of https://github.com/eonyedikachi/project-management-tool-1 into advancebranch
+[1;35m|[m [31m|[m[31m/[m[1;36m|[m [1;33m|[m [36m|[m [36m|[m [34m|[m [31m|[m [32m|[m [1;36m|[m 
+[1;35m|[m [31m|[m [1;36m|[m [1;33m|[m[1;36m_[m[36m|[m[1;36m_[m[36m|[m[1;36m_[m[34m|[m[1;36m_[m[31m|[m[1;36m_[m[32m|[m[1;36m/[m  
+[1;35m|[m [31m|[m [1;36m|[m[1;36m/[m[1;33m|[m [36m|[m [36m|[m [34m|[m [31m|[m [32m|[m   
+[1;35m|[m [31m|[m * [1;33m|[m [36m|[m [36m|[m [34m|[m [31m|[m [32m|[m   [33mb5ced43[m Merge pull request #6 from rolteame/advancebranch
+[1;35m|[m [31m|[m [32m|[m[36m\[m [1;33m\[m [36m\[m [36m\[m [34m\[m [31m\[m [32m\[m  
+[1;35m|[m [31m|[m [32m|[m [36m|[m[32m_[m[1;33m|[m[32m_[m[36m|[m[32m_[m[36m|[m[32m_[m[34m|[m[32m_[m[31m|[m[32m/[m  
+[1;35m|[m [31m|[m [32m|[m[32m/[m[36m|[m [1;33m|[m [36m|[m [36m|[m [34m|[m [31m|[m   
+[1;35m|[m * [32m|[m [36m|[m [1;33m|[m [36m|[m [36m|[m [34m|[m [31m|[m   [33mb20be09[m Merge pull request #29 from rolteame/master
+[1;35m|[m [36m|[m[1;35m\[m [32m\[m [36m\[m [1;33m\[m [36m\[m [36m\[m [34m\[m [31m\[m  
+[1;35m|[m [36m|[m[1;35m/[m [32m/[m [36m/[m [1;33m/[m [36m/[m [36m/[m [34m/[m [31m/[m  
+[1;35m|[m[1;35m/[m[36m|[m [32m|[m [36m/[m [1;33m/[m [36m/[m [36m/[m [34m/[m [31m/[m   
+[1;35m|[m [36m|[m [32m|[m[36m/[m [1;33m/[m [36m/[m [36m/[m [34m/[m [31m/[m    
+[1;35m|[m [36m|[m[36m/[m[32m|[m [1;33m|[m [36m|[m [36m|[m [34m|[m [31m|[m     
+[1;35m|[m * [32m|[m [1;33m|[m [36m|[m [36m|[m [34m|[m [31m|[m   [33md821114[m Merge pull request #28 from rolteame/master
+[1;35m|[m [1;33m|[m[1;34m\[m [32m\[m [1;33m\[m [36m\[m [36m\[m [34m\[m [31m\[m  
+[1;35m|[m [1;33m|[m [1;34m|[m [32m|[m * [36m|[m [36m|[m [34m|[m [31m|[m [33m0efe338[m Merge branch 'master' of https://github.com/eonyedikachi/project-management-tool-1 into master
+[1;35m|[m [1;33m|[m[1;35m_[m[1;34m|[m[1;35m_[m[32m|[m[1;35m/[m[1;36m|[m [36m|[m [36m|[m [34m|[m [31m|[m 
+[1;35m|[m[1;35m/[m[1;33m|[m [1;34m|[m [32m|[m [1;36m|[m [36m|[m [36m|[m [34m|[m [31m|[m 
+[1;35m|[m [1;33m|[m [1;34m|[m [32m|[m * [36m|[m [36m|[m [34m|[m [31m|[m   [33mc63a7d5[m Merge pull request #7 from rolteame/master
+[1;35m|[m [1;33m|[m [1;34m|[m [32m|[m [31m|[m[1;34m\[m [36m\[m [36m\[m [34m\[m [31m\[m  
+[1;35m|[m [1;33m|[m [1;34m|[m [32m|[m[1;34m_[m[31m|[m[1;34m/[m [36m/[m [36m/[m [34m/[m [31m/[m  
+[1;35m|[m [1;33m|[m [1;34m|[m[1;34m/[m[32m|[m [31m|[m [36m|[m [36m|[m [34m|[m [31m|[m   
+* [1;33m|[m [1;34m/[m [32m|[m [31m|[m [36m|[m [36m|[m [34m|[m [31m|[m [33mee88e93[m calender feature added
+[1;34m|[m [1;33m|[m[1;34m/[m [32m/[m [31m/[m [36m/[m [36m/[m [34m/[m [31m/[m  
+[1;34m|[m[1;34m/[m[1;33m|[m [32m|[m [31m|[m [36m|[m [36m|[m [34m|[m [31m|[m   
+* [1;33m|[m [32m|[m [31m|[m [36m|[m [36m|[m [34m|[m [31m|[m [33mbe66921[m Cleaned file structure
+* [1;33m|[m [32m|[m [31m|[m [36m|[m [36m|[m [34m|[m [31m|[m [33mac639c4[m Cleaned file structure
+* [1;33m|[m [32m|[m [31m|[m [36m|[m [36m|[m [34m|[m [31m|[m [33mcec8fa0[m move index
+* [1;33m|[m [32m|[m [31m|[m [36m|[m [36m|[m [34m|[m [31m|[m [33m86c2756[m links changes
+* [1;33m|[m [32m|[m [31m|[m [36m|[m [36m|[m [34m|[m [31m|[m [33mc329c6d[m overall connection changes
+* [1;33m|[m [32m|[m [31m|[m [36m|[m [36m|[m [34m|[m [31m|[m   [33m360db2f[m Merge branch 'master' of https://github.com/rolteame/project-management-tool-1 into master
+[33m|[m[34m\[m [1;33m\[m [32m\[m [31m\[m [36m\[m [36m\[m [34m\[m [31m\[m  
+[33m|[m * [1;33m|[m [32m|[m [31m|[m [36m|[m [36m|[m [34m|[m [31m|[m [33m234cf3d[m password features
+[33m|[m [34m|[m [1;33m|[m[34m_[m[32m|[m[34m_[m[31m|[m[34m_[m[36m|[m[34m_[m[36m|[m[34m/[m [31m/[m  
+[33m|[m [34m|[m[34m/[m[1;33m|[m [32m|[m [31m|[m [36m|[m [36m|[m [31m|[m   
+* [34m|[m [1;33m|[m [32m|[m [31m|[m [36m|[m [36m|[m [31m|[m   [33m1f43910[m Merge branch 'advancebranch' of https://github.com/rolteame/project-management-tool-1 into master
+[35m|[m[1;33m\[m [34m\[m [1;33m\[m [32m\[m [31m\[m [36m\[m [36m\[m [31m\[m  
+[35m|[m [1;33m|[m [34m|[m[1;33m/[m [32m/[m [31m/[m [36m/[m [36m/[m [31m/[m  
+[35m|[m [1;33m|[m[1;33m/[m[34m|[m [32m|[m [31m|[m [36m|[m [36m|[m [31m|[m   
+[35m|[m * [34m|[m [32m|[m [31m|[m [36m|[m [36m|[m [31m|[m   [33m76b0ad1[m Merge pull request #25 from bankymono/advancebranch
+[35m|[m [1;31m|[m[1;32m\[m [34m\[m [32m\[m [31m\[m [36m\[m [36m\[m [31m\[m  
+[35m|[m [1;31m|[m * [34m|[m [32m|[m [31m|[m [36m|[m [36m|[m [31m|[m [33m7e1b756[m  Edit profile picture
+[35m|[m [1;31m|[m * [34m|[m [32m|[m [31m|[m [36m|[m [36m|[m [31m|[m [33md46e0a1[m Edit user image
+[35m|[m * [1;32m|[m [34m|[m [32m|[m [31m|[m [36m|[m [36m|[m [31m|[m   [33m98fc165[m Merge pull request #26 from Stesoda/advancebranch
+[35m|[m [1;32m|[m[1;34m\[m [1;32m\[m [34m\[m [32m\[m [31m\[m [36m\[m [36m\[m [31m\[m  
+[35m|[m [1;32m|[m [1;34m|[m[1;32m/[m [34m/[m [32m/[m [31m/[m [36m/[m [36m/[m [31m/[m  
+[35m|[m [1;32m|[m[1;32m/[m[1;34m|[m [34m|[m [32m|[m [31m|[m [36m|[m [36m|[m [31m|[m   
+[35m|[m [1;32m|[m * [34m|[m [32m|[m [31m|[m [36m|[m [36m|[m [31m|[m [33m66bba2c[m added invite teams button to tempt.html,overview.html,activities.html and usermgt.html
+[35m|[m [1;32m|[m[1;32m/[m [34m/[m [32m/[m [31m/[m [36m/[m [36m/[m [31m/[m  
+[35m|[m * [34m|[m [32m|[m [31m|[m [36m|[m [36m|[m [31m|[m   [33m32db464[m Merge pull request #24 from eonyedikachi/advancebranch
+[35m|[m [1;35m|[m[32m\[m [34m\[m [32m\[m [31m\[m [36m\[m [36m\[m [31m\[m  
+[35m|[m [1;35m|[m [32m|[m [34m|[m[32m/[m [31m/[m [36m/[m [36m/[m [31m/[m  
+[35m|[m [1;35m|[m [32m|[m[32m/[m[34m|[m [31m|[m [36m|[m [36m|[m [31m|[m   
+[35m|[m [1;35m|[m * [34m|[m [31m|[m [36m|[m [36m|[m [31m|[m [33m9c10460[m Clear input after click event in Task Session
+[35m|[m [1;35m|[m * [34m|[m [31m|[m [36m|[m [36m|[m [31m|[m [33m78e071b[m Creation of empty task description fixed
+[35m|[m [1;35m|[m * [34m|[m [31m|[m [36m|[m [36m|[m [31m|[m [33m90ff8ff[m Creating task with empty input fixed
+[35m|[m [1;35m|[m * [34m|[m [31m|[m [36m|[m [36m|[m [31m|[m [33m6cfe9a7[m Conflict from shutdown resolved
+[35m|[m [1;35m|[m * [34m|[m [31m|[m [36m|[m [36m|[m [31m|[m   [33m5f9b419[m Merged str=orage.js and taskoverview to remote with corresponding name
+[35m|[m [1;35m|[m [31m|[m[32m\[m [34m\[m [31m\[m [36m\[m [36m\[m [31m\[m  
+[35m|[m [1;35m|[m [31m|[m * [34m|[m [31m|[m [36m|[m [36m|[m [31m|[m [33me72adf7[m Task Card Update
+[35m|[m [1;35m|[m * [32m|[m [34m|[m [31m|[m [36m|[m [36m|[m [31m|[m [33mfe4d02a[m taskoverview.html before shutdown
+[35m|[m [1;35m|[m * [32m|[m [34m|[m [31m|[m [36m|[m [36m|[m [31m|[m [33m5b41f2d[m Changes before shutdown
+[35m|[m [1;35m|[m [32m|[m[32m/[m [34m/[m [31m/[m [36m/[m [36m/[m [31m/[m  
+[35m|[m [1;35m|[m * [34m|[m [31m|[m [36m|[m [36m|[m [31m|[m [33me33c2c5[m Task Session Modification
+[35m|[m [1;35m|[m * [34m|[m [31m|[m [36m|[m [36m|[m [31m|[m   [33m9968fb2[m Merge Conflict fixed
+[35m|[m [1;35m|[m [31m|[m[1;35m\[m [34m\[m [31m\[m [36m\[m [36m\[m [31m\[m  
+[35m|[m [1;35m|[m [31m|[m[1;35m/[m [34m/[m [31m/[m [36m/[m [36m/[m [31m/[m  
+[35m|[m [1;35m|[m[1;35m/[m[31m|[m [34m|[m [31m/[m [36m/[m [36m/[m [31m/[m   
+[35m|[m [1;35m|[m [31m|[m [34m|[m[31m/[m [36m/[m [36m/[m [31m/[m    
+[35m|[m [1;35m|[m [31m|[m[31m/[m[34m|[m [36m|[m [36m|[m [31m|[m     
+[35m|[m * [31m|[m [34m|[m [36m|[m [36m|[m [31m|[m   [33mbb1f909[m Merge pull request #22 from Stesoda/advancebranch
+[35m|[m [35m|[m[36m\[m [31m\[m [34m\[m [36m\[m [36m\[m [31m\[m  
+[35m|[m [35m|[m * [31m|[m [34m|[m [36m|[m [36m|[m [31m|[m [33mb6e5ecc[m user management console
+[35m|[m [35m|[m * [31m|[m [34m|[m [36m|[m [36m|[m [31m|[m   [33m48bd4ce[m Merge branch 'advancebranch' of https://github.com/rolteame/project-management-tool-1 into advancebranch
+[35m|[m [35m|[m [1;31m|[m[35m\[m [31m\[m [34m\[m [36m\[m [36m\[m [31m\[m  
+[35m|[m [35m|[m [1;31m|[m[35m/[m [31m/[m [34m/[m [36m/[m [36m/[m [31m/[m  
+[35m|[m [35m|[m[35m/[m[1;31m|[m [31m|[m [34m|[m [36m|[m [36m|[m [31m|[m   
+[35m|[m [35m|[m * [31m|[m [34m|[m [36m|[m [36m|[m [31m|[m [33md109391[m user management console
+[35m|[m [35m|[m * [31m|[m [34m|[m [36m|[m [36m|[m [31m|[m   [33m3f84d2b[m Merge branch 'advancebranch' of https://github.com/rolteame/project-management-tool-1 into advancebranch
+[35m|[m [35m|[m [1;33m|[m[1;34m\[m [31m\[m [34m\[m [36m\[m [36m\[m [31m\[m  
+[35m|[m [35m|[m * [1;34m\[m [31m\[m [34m\[m [36m\[m [36m\[m [31m\[m   [33m0c47088[m Merge https://github.com/rolteame/project-management-tool-1 into advancebranch
+[35m|[m [35m|[m [1;35m|[m[36m\[m [1;34m\[m [31m\[m [34m\[m [36m\[m [36m\[m [31m\[m  
+[35m|[m [35m|[m [1;35m|[m [36m|[m [1;34m|[m[36m_[m[31m|[m[36m_[m[34m|[m[36m_[m[36m|[m[36m/[m [31m/[m  
+[35m|[m [35m|[m [1;35m|[m [36m|[m[36m/[m[1;34m|[m [31m|[m [34m|[m [36m|[m [31m|[m   
+[35m|[m [35m|[m * [36m|[m [1;34m|[m [31m|[m [34m|[m [36m|[m [31m|[m   [33mbb5686e[m Merge branch 'advancebranch' of https://github.com/rolteame/project-management-tool-1 into advancebranch
+[35m|[m [35m|[m [31m|[m[32m\[m [36m\[m [1;34m\[m [31m\[m [34m\[m [36m\[m [31m\[m  
+[35m|[m [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m * [34m|[m [36m|[m [31m|[m [33mfd0e917[m Merge pull request #5 from rolteame/master
+[35m|[m [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [33m|[m[34m\[m[34m|[m [36m|[m [31m|[m 
+[35m|[m [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m * [34m|[m [36m|[m [31m|[m   [33meeb1bfa[m Merge pull request #4 from rolteame/master
+[35m|[m [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [35m|[m[36m\[m [34m\[m [36m\[m [31m\[m  
+[35m|[m [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m * [36m\[m [34m\[m [36m\[m [31m\[m   [33m941a394[m Merge pull request #3 from rolteame/master
+[35m|[m [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m[31m\[m [36m\[m [34m\[m [36m\[m [31m\[m  
+[35m|[m [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m[31m_[m[34m|[m[31m_[m[36m|[m[31m/[m  
+[35m|[m [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m[31m/[m[36m|[m [34m|[m [36m|[m   
+* [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [34m|[m [36m|[m [33maa8b6c7[m users
+* [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [34m|[m [36m|[m [33m59c41b7[m project show on sidebar
+[34m|[m [35m|[m[34m_[m[31m|[m[34m_[m[32m|[m[34m_[m[36m|[m[34m_[m[1;34m|[m[34m_[m[1;31m|[m[34m_[m[31m|[m[34m_[m[36m|[m[34m/[m [36m/[m  
+[34m|[m[34m/[m[35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m   
+* [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m [33m3df30bf[m USER AND TASK CHANGES
+* [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m   [33m0dcdb6e[m Merge branch 'master' of https://github.com/rolteame/project-management-tool-1 into master
+[1;33m|[m[1;34m\[m [35m\[m [31m\[m [32m\[m [36m\[m [1;34m\[m [1;31m\[m [31m\[m [36m\[m [36m\[m  
+[1;33m|[m * [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m [33m85b3f9d[m deleting user added
+* [1;34m|[m [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m [33mc975a49[m ne w view changes
+* [1;34m|[m [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m [33m783204b[m Merge branch 'master' of https://github.com/rolteame/project-management-tool-1 into master
+[1;35m|[m[1;34m\[m[1;34m|[m [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m 
+[1;35m|[m * [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m   [33m8ec8c1b[m Merge branch 'master' of https://github.com/rolteame/project-management-tool-1
+[1;35m|[m [31m|[m[32m\[m [35m\[m [31m\[m [32m\[m [36m\[m [1;34m\[m [1;31m\[m [31m\[m [36m\[m [36m\[m  
+[1;35m|[m [31m|[m * [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m [33m9f07a1f[m Merge pull request #21 from rolteame/advancebranch
+[1;35m|[m [31m|[m [33m|[m[35m\[m[35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m 
+[1;35m|[m * [33m|[m [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m [33mabcd9bf[m add sweet alert and user update system
+[1;35m|[m [33m|[m[33m/[m [35m/[m [31m/[m [32m/[m [36m/[m [1;34m/[m [1;31m/[m [31m/[m [36m/[m [36m/[m  
+[1;35m|[m * [35m|[m [31m|[m [32m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m   [33mabd91b7[m Merge pull request #20 from Stesoda/master
+[1;35m|[m [36m|[m[36m\[m [35m\[m [31m\[m [32m\[m [36m\[m [1;34m\[m [1;31m\[m [31m\[m [36m\[m [36m\[m  
+[1;35m|[m [36m|[m [36m|[m[36m_[m[35m|[m[36m_[m[31m|[m[36m_[m[32m|[m[36m/[m [1;34m/[m [1;31m/[m [31m/[m [36m/[m [36m/[m  
+[1;35m|[m [36m|[m[36m/[m[36m|[m [35m|[m [31m|[m [32m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m   
+[1;35m|[m [36m|[m * [35m|[m [31m|[m [32m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m [33mc987d7d[m Delete settings.json
+[1;35m|[m [36m|[m * [35m|[m [31m|[m [32m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m   [33m514f027[m Merge https://github.com/rolteame/project-management-tool-1 into master
+[1;35m|[m [36m|[m [31m|[m[36m\[m [35m\[m [31m\[m [32m\[m [1;34m\[m [1;31m\[m [31m\[m [36m\[m [36m\[m  
+[1;35m|[m [36m|[m [31m|[m[36m/[m [35m/[m [31m/[m [32m/[m [1;34m/[m [1;31m/[m [31m/[m [36m/[m [36m/[m  
+[1;35m|[m [36m|[m[36m/[m[31m|[m [35m|[m [31m/[m [32m/[m [1;34m/[m [1;31m/[m [31m/[m [36m/[m [36m/[m   
+[1;35m|[m [36m|[m [31m|[m [35m|[m[31m/[m [32m/[m [1;34m/[m [1;31m/[m [31m/[m [36m/[m [36m/[m    
+[1;35m|[m [36m|[m [31m|[m[31m/[m[35m|[m [32m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m     
+[1;35m|[m [36m|[m * [35m|[m [32m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [36m|[m   [33meca0507[m trying to merge conflicts
+[1;35m|[m [36m|[m [1;33m|[m[1;34m\[m [35m\[m [32m\[m [1;34m\[m [1;31m\[m [31m\[m [36m\[m [36m\[m  
+[1;35m|[m [36m|[m * [1;34m\[m [35m\[m [32m\[m [1;34m\[m [1;31m\[m [31m\[m [36m\[m [36m\[m   [33m2b2615b[m Merge https://github.com/rolteame/project-management-tool-1 into master
+[1;35m|[m [36m|[m [1;35m|[m[36m\[m [1;34m\[m [35m\[m [32m\[m [1;34m\[m [1;31m\[m [31m\[m [36m\[m [36m\[m  
+[1;35m|[m [36m|[m [1;35m|[m [36m|[m [1;34m|[m[36m_[m[35m|[m[36m_[m[32m|[m[36m_[m[1;34m|[m[36m_[m[1;31m|[m[36m_[m[31m|[m[36m/[m [36m/[m  
+[1;35m|[m [36m|[m [1;35m|[m [36m|[m[36m/[m[1;34m|[m [35m|[m [32m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m   
+[1;35m|[m [36m|[m * [36m|[m [1;34m|[m [35m|[m [32m|[m [1;34m|[m [1;31m|[m [31m|[m [36m|[m [33m8791886[m overview-task-page body
+[1;35m|[m [36m|[m [36m|[m [36m|[m[36m_[m[1;34m|[m[36m_[m[35m|[m[36m_[m[32m|[m[36m_[m[1;34m|[m[36m_[m[1;31m|[m[36m_[m[31m|[m[36m/[m  
+[1;35m|[m [36m|[m [36m|[m[36m/[m[36m|[m [1;34m|[m [35m|[m [32m|[m [1;34m|[m [1;31m|[m [31m|[m   
+* [36m|[m [36m|[m [36m|[m [1;34m|[m [35m|[m [32m|[m [1;34m|[m [1;31m|[m [31m|[m   [33m826774f[m Merge branch 'advancebranch' of https://github.com/rolteame/project-management-tool-1 into master
+[36m|[m[35m\[m [36m\[m [36m\[m [36m\[m [1;34m\[m [35m\[m [32m\[m [1;34m\[m [1;31m\[m [31m\[m  
+[36m|[m [35m|[m[36m/[m [36m/[m [36m/[m [1;34m/[m [35m/[m [32m/[m [1;34m/[m [1;31m/[m [31m/[m  
+[36m|[m[36m/[m[35m|[m [36m|[m [36m|[m [1;34m|[m [35m/[m [32m/[m [1;34m/[m [1;31m/[m [31m/[m   
+[36m|[m [35m|[m [36m|[m[35m_[m[36m|[m[35m_[m[1;34m|[m[35m/[m [32m/[m [1;34m/[m [1;31m/[m [31m/[m    
+[36m|[m [35m|[m[35m/[m[36m|[m [36m|[m [1;34m|[m [32m|[m [1;34m|[m [1;31m|[m [31m|[m     
+[36m|[m * [36m|[m [36m|[m [1;34m|[m [32m|[m [1;34m|[m [1;31m|[m [31m|[m   [33mf4709ce[m Merge pull request #19 from bankymono/advancebranch
+[36m|[m [1;34m|[m[34m\[m [36m\[m [36m\[m [1;34m\[m [32m\[m [1;34m\[m [1;31m\[m [31m\[m  
+[36m|[m [1;34m|[m [34m|[m[1;34m_[m[36m|[m[1;34m_[m[36m|[m[1;34m_[m[1;34m|[m[1;34m_[m[32m|[m[1;34m/[m [1;31m/[m [31m/[m  
+[36m|[m [1;34m|[m[1;34m/[m[34m|[m [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m   
+[36m|[m [1;34m|[m * [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m [33m1a0af04[m Merge branch 'bankytest' into advancebranch
+[36m|[m [1;34m|[m[1;34m/[m[36m|[m [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m 
+[36m|[m [1;34m|[m * [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m [33meb196ad[m Implemented Teams(ability to add teams from a list of teams)
+[36m|[m * [36m|[m [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m [33m1d6f570[m Merge pull request #18 from bankymono/advancebranch
+[36m|[m [1;31m|[m[36m\[m[36m|[m [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m 
+[36m|[m [1;31m|[m * [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m [33med4ebda[m Implemented delete functionality for lists
+[36m|[m [1;31m|[m[1;31m/[m [36m/[m [36m/[m [1;34m/[m [32m/[m [1;31m/[m [31m/[m  
+* [1;31m|[m [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m [33mf7fd420[m Merge branch 'advancebranch' of https://github.com/rolteame/project-management-tool-1 into master
+[1;33m|[m[1;31m\[m[1;31m|[m [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m 
+[1;33m|[m * [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m   [33m9c4385d[m Merge pull request #17 from bankymono/advancebranch
+[1;33m|[m [1;35m|[m[1;36m\[m [36m\[m [36m\[m [1;34m\[m [32m\[m [1;31m\[m [31m\[m  
+[1;33m|[m [1;35m|[m * [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m [33mb2a34fd[m Added list feature to project overview page
+[1;33m|[m [1;35m|[m[1;35m/[m [36m/[m [36m/[m [1;34m/[m [32m/[m [1;31m/[m [31m/[m  
+[1;33m|[m * [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m   [33m5d6f418[m Merge pull request #16 from rolteame/master
+[1;33m|[m [31m|[m[32m\[m [36m\[m [36m\[m [1;34m\[m [32m\[m [1;31m\[m [31m\[m  
+* [31m|[m [32m|[m [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m [33m98f7d99[m task changes
+[32m|[m [31m|[m[32m/[m [36m/[m [36m/[m [1;34m/[m [32m/[m [1;31m/[m [31m/[m  
+[32m|[m[32m/[m[31m|[m [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m   
+* [31m|[m [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m [33maf0d294[m new changes
+[31m|[m[31m/[m [36m/[m [36m/[m [1;34m/[m [32m/[m [1;31m/[m [31m/[m  
+* [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m [33mecd7552[m v0.4.3.21
+* [36m|[m [36m|[m [1;34m|[m [32m|[m [1;31m|[m [31m|[m [33mde1cbda[m v0.4.3.20
+[32m|[m [36m|[m[32m_[m[36m|[m[32m_[m[1;34m|[m[32m/[m [1;31m/[m [31m/[m  
+[32m|[m[32m/[m[36m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m   
+* [36m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [33mdac3fd9[m v0.4.3.20
+* [36m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m   [33m0e9a4ce[m Merge branch 'advancebranch' of https://github.com/rolteame/project-management-tool-1 into advancebranch
+[33m|[m[34m\[m [36m\[m [36m\[m [1;34m\[m [1;31m\[m [31m\[m  
+[33m|[m * [36m\[m [36m\[m [1;34m\[m [1;31m\[m [31m\[m   [33m5825330[m Merge pull request #14 from bankymono/advancebranch
+[33m|[m [35m|[m[36m\[m [36m\[m [36m\[m [1;34m\[m [1;31m\[m [31m\[m  
+[33m|[m [35m|[m * [36m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [33m8f07b2b[m implemented signout
+[33m|[m [35m|[m * [36m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [33m79bad17[m added create project/create task/delete task functionality
+[33m|[m [35m|[m[35m/[m [36m/[m [36m/[m [1;34m/[m [1;31m/[m [31m/[m  
+* [35m|[m [36m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m [33me97e3ad[m Merge branch 'advancebranch' of https://github.com/rolteame/project-management-tool-1 into advancebranch
+[1;31m|[m[35m\[m[35m|[m [36m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m 
+[1;31m|[m * [36m|[m [36m|[m [1;34m|[m [1;31m|[m [31m|[m   [33m3182da6[m Merge pull request #12 from rolteame/master
+[1;31m|[m [1;33m|[m[1;34m\[m [36m\[m [36m\[m [1;34m\[m [1;31m\[m [31m\[m  
+[1;31m|[m [1;33m|[m [1;34m|[m [36m|[m[1;34m_[m[36m|[m[1;34m/[m [1;31m/[m [31m/[m  
+[1;31m|[m [1;33m|[m [1;34m|[m[1;34m/[m[36m|[m [36m|[m [1;31m|[m [31m|[m   
+[1;31m|[m [1;33m|[m * [36m|[m [36m|[m [1;31m|[m [31m|[m [33m610d46d[m new create projects
+[1;31m|[m [1;33m|[m * [36m|[m [36m|[m [1;31m|[m [31m|[m   [33m92b6dd8[m Merge branch 'advancebranch' of https://github.com/rolteame/project-management-tool-1 into master
+[1;31m|[m [1;33m|[m [1;35m|[m[1;33m\[m [36m\[m [36m\[m [1;31m\[m [31m\[m  
+[1;31m|[m [1;33m|[m [1;35m|[m[1;33m/[m [36m/[m [36m/[m [1;31m/[m [31m/[m  
+[1;31m|[m [1;33m|[m[1;33m/[m[1;35m|[m [36m|[m [36m|[m [1;31m|[m [31m|[m   
+[1;31m|[m [1;33m|[m * [36m|[m [36m|[m [1;31m|[m [31m|[m [33m86d64ae[m acticities page adjustments
+[1;31m|[m [1;33m|[m * [36m|[m [36m|[m [1;31m|[m [31m|[m   [33m8687ef7[m Merge branch 'master' of https://github.com/rolteame/project-management-tool-1 into master
+[1;31m|[m [1;33m|[m [31m|[m[36m\[m [36m\[m [36m\[m [1;31m\[m [31m\[m  
+[1;31m|[m [1;33m|[m [31m|[m [36m|[m [36m|[m[36m/[m [1;31m/[m [31m/[m  
+[1;31m|[m [1;33m|[m [31m|[m [36m|[m[36m/[m[36m|[m [1;31m|[m [31m|[m   
+[1;31m|[m [1;33m|[m * [36m|[m [36m|[m [1;31m|[m [31m|[m [33m63982a4[m index changes
+[1;31m|[m [1;33m|[m * [36m|[m [36m|[m [1;31m|[m [31m|[m   [33m525dac0[m Merge branch 'advancebranch' of https://github.com/rolteame/project-management-tool-1 into master
+[1;31m|[m [1;33m|[m [33m|[m[34m\[m [36m\[m [36m\[m [1;31m\[m [31m\[m  
+* [1;33m|[m [33m|[m [34m|[m [36m|[m [36m|[m [1;31m|[m [31m|[m [33mb9907ce[m link adjustment
+* [1;33m|[m [33m|[m [34m|[m [36m|[m [36m|[m [1;31m|[m [31m|[m [33m295ecb4[m v0.4.3.2.12
+* [1;33m|[m [33m|[m [34m|[m [36m|[m [36m|[m [1;31m|[m [31m|[m [33m4e373f9[m v0.4.3.2.12
+* [1;33m|[m [33m|[m [34m|[m [36m|[m [36m|[m [1;31m|[m [31m|[m [33mc4d988a[m V0.4.3.11
+[1;33m|[m[1;33m/[m [33m/[m [34m/[m [36m/[m [36m/[m [1;31m/[m [31m/[m  
+* [33m|[m [34m|[m [36m|[m [36m|[m [1;31m|[m [31m|[m [33m5e8f92c[m restructured dasboard template
+* [33m|[m [34m|[m [36m|[m [36m|[m [1;31m|[m [31m|[m   [33m23304a5[m Merge branch 'advancebranch' of https://github.com/rolteame/project-management-tool-1 into advancebranch
+[35m|[m[36m\[m [33m\[m [34m\[m [36m\[m [36m\[m [1;31m\[m [31m\[m  
+[35m|[m * [33m\[m [34m\[m [36m\[m [36m\[m [1;31m\[m [31m\[m   [33mfce649d[m Merge pull request #11 from rolteame/master
+[35m|[m [1;31m|[m[36m\[m [33m\[m [34m\[m [36m\[m [36m\[m [1;31m\[m [31m\[m  
+[35m|[m [1;31m|[m [36m|[m [33m|[m[36m_[m[34m|[m[36m/[m [36m/[m [1;31m/[m [31m/[m  
+[35m|[m [1;31m|[m [36m|[m[36m/[m[33m|[m [34m|[m [36m|[m [1;31m|[m [31m|[m   
+[35m|[m [1;31m|[m * [33m|[m [34m|[m [36m|[m [1;31m|[m [31m|[m   [33m2d4ddbc[m Merge pull request #10 from rolteame/advancebranch
+[35m|[m [1;31m|[m [33m|[m[1;31m\[m [33m\[m [34m\[m [36m\[m [1;31m\[m [31m\[m  
+[35m|[m [1;31m|[m [33m|[m[1;31m/[m [33m/[m [34m/[m [36m/[m [1;31m/[m [31m/[m  
+[35m|[m [1;31m|[m[1;31m/[m[33m|[m [33m/[m [34m/[m [36m/[m [1;31m/[m [31m/[m   
+[35m|[m [1;31m|[m [33m|[m[33m/[m [34m/[m [36m/[m [1;31m/[m [31m/[m    
+[35m|[m * [33m|[m [34m|[m [36m|[m [1;31m|[m [31m|[m [33mdd7551c[m Update activities.html
+[35m|[m * [33m|[m [34m|[m [36m|[m [1;31m|[m [31m|[m   [33m01f20c4[m Merge pull request #9 from bankymono/advancebranch
+[35m|[m [34m|[m[1;36m\[m [33m\[m [34m\[m [36m\[m [1;31m\[m [31m\[m  
+[35m|[m [34m|[m [1;36m|[m[34m_[m[33m|[m[34m/[m [36m/[m [1;31m/[m [31m/[m  
+[35m|[m [34m|[m[34m/[m[1;36m|[m [33m|[m [36m|[m [1;31m|[m [31m|[m   
+[35m|[m [34m|[m * [33m|[m [36m|[m [1;31m|[m [31m|[m [33m937edb3[m added header to the activity page
+[35m|[m [34m|[m * [33m|[m [36m|[m [1;31m|[m [31m|[m [33m8f448f7[m updated the activities page
+[35m|[m * [1;36m|[m [33m|[m [36m|[m [1;31m|[m [31m|[m [33mde6e4a0[m Merge pull request #7 from bankymono/advancebranch
+[35m|[m [31m|[m[1;36m\[m[1;36m|[m [33m|[m [36m|[m [1;31m|[m [31m|[m 
+[35m|[m [31m|[m * [33m|[m [36m|[m [1;31m|[m [31m|[m [33mf8d4921[m Added update function for form update.
+[35m|[m [31m|[m [32m|[m * [36m|[m [1;31m|[m [31m|[m [33me3e7f2d[m nav changes
+[35m|[m [31m|[m [32m|[m * [36m|[m [1;31m|[m [31m|[m [33m0d52837[m new side bar
+[35m|[m [31m|[m [32m|[m * [36m|[m [1;31m|[m [31m|[m   [33m0f24cff[m Merge branch 'advancebranch' of https://github.com/rolteame/project-management-tool-1 into master
+[35m|[m [31m|[m [32m|[m [33m|[m[31m\[m [36m\[m [1;31m\[m [31m\[m  
+[35m|[m [31m|[m [32m|[m[31m_[m[33m|[m[31m/[m [36m/[m [1;31m/[m [31m/[m  
+[35m|[m [31m|[m[31m/[m[32m|[m [33m|[m [36m|[m [1;31m|[m [31m|[m   
+[35m|[m * [32m|[m [33m|[m [36m|[m [1;31m|[m [31m|[m [33m7f187fa[m Merge pull request #6 from bankymono/advancebranch
+[35m|[m [35m|[m[32m\[m[32m|[m [33m|[m [36m|[m [1;31m|[m [31m|[m 
+[35m|[m [35m|[m * [33m|[m [36m|[m [1;31m|[m [31m|[m [33m46afa71[m integrated the settings page with the aside/sidebar
+[35m|[m [35m|[m * [33m|[m [36m|[m [1;31m|[m [31m|[m   [33ma1b6c29[m resolved merge conflict pertaining to styles
+[35m|[m [35m|[m [31m|[m[35m\[m [33m\[m [36m\[m [1;31m\[m [31m\[m  
+[35m|[m [35m|[m [31m|[m[35m/[m [33m/[m [36m/[m [1;31m/[m [31m/[m  
+[35m|[m [35m|[m[35m/[m[31m|[m [33m|[m [36m|[m [1;31m|[m [31m/[m   
+[35m|[m [35m|[m [31m|[m [33m|[m[31m_[m[36m|[m[31m_[m[1;31m|[m[31m/[m    
+[35m|[m [35m|[m [31m|[m[31m/[m[33m|[m [36m|[m [1;31m|[m     
+[35m|[m [35m|[m [31m|[m * [36m|[m [1;31m|[m [33m1045f9d[m new site changes
+[35m|[m [35m|[m [31m|[m * [36m|[m [1;31m|[m [33ma48e642[m Merge branch 'advancebranch' of https://github.com/rolteame/project-management-tool-1 into master
+[35m|[m [35m|[m [31m|[m[31m/[m[35m|[m [36m|[m [1;31m|[m 
+[35m|[m [35m|[m [31m|[m[35m/[m [36m/[m [1;31m/[m  
+[35m|[m [35m|[m[35m/[m[31m|[m [36m|[m [1;31m|[m   
+[35m|[m * [31m|[m [36m|[m [1;31m|[m [33m706d21d[m Update user.js
+[35m|[m * [31m|[m [36m|[m [1;31m|[m [33m3f8ad42[m Update user.js
+[35m|[m [1;34m|[m * [36m|[m [1;31m|[m   [33m0027fee[m[33m ([m[1;31mupstream/pr/5[m[33m)[m Merge pull request #3 from eonyedikachi/master
+[35m|[m [1;34m|[m [1;35m|[m[1;31m\[m [36m\[m [1;31m\[m  
+[35m|[m [1;34m|[m [1;35m|[m [1;31m|[m [36m|[m[1;31m/[m  
+[35m|[m [1;34m|[m [1;35m|[m [1;31m|[m[1;31m/[m[36m|[m   
+[35m|[m [1;34m|[m [1;35m|[m * [36m|[m [33m901e083[m Update Bascom Logo
+[35m|[m [1;34m|[m [1;35m|[m * [36m|[m [33mc275bbe[m Sidebar Update, changed Dashboard to dashboard
+[35m|[m [1;34m|[m [1;35m|[m * [36m|[m   [33m15fc641[m Merge pull request #2 from rolteame/master
+[35m|[m [1;34m|[m [1;35m|[m [31m|[m[1;35m\[m [36m\[m  
+[35m|[m [1;34m|[m [1;35m|[m [31m|[m[1;35m/[m [36m/[m  
+[35m|[m [1;34m|[m [1;35m|[m[1;35m/[m[31m|[m [36m|[m   
+[35m|[m [1;34m|[m [1;35m|[m * [36m|[m [33m39c275f[m Merge pull request #1 from rolteame/master
+[35m|[m [1;34m|[m [1;35m|[m [33m|[m[36m\[m[36m|[m 
+* [1;34m|[m [1;35m|[m [33m|[m [36m|[m [33m6559126[m Revert "Modified register function"
+* [1;34m|[m [1;35m|[m [33m|[m [36m|[m [33ma6e84b3[m Modified register function
+[1;34m|[m[1;34m/[m [1;35m/[m [33m/[m [36m/[m  
+* [1;35m|[m [33m|[m [36m|[m [33m73b1dca[m Modified register function
+* [1;35m|[m [33m|[m [36m|[m [33md837fcd[m Modified template file, added favicon and improved css files
+* [1;35m|[m [33m|[m [36m|[m [33ma36ba62[m modified views folder
+* [1;35m|[m [33m|[m [36m|[m [33m356ce6b[m modified views folder
+* [1;35m|[m [33m|[m [36m|[m [33ma1c02e8[m modified dashboard folder
+* [1;35m|[m [33m|[m [36m|[m [33ma485793[m Delete login.html
+* [1;35m|[m [33m|[m [36m|[m [33m5e11ad9[m Moved to single page and adjusted file structure
+[1;35m|[m[1;35m/[m [33m/[m [36m/[m  
+* [33m|[m [36m|[m   [33m7150241[m Merge https://github.com/nazeeeh/project-management-tool into master
+[35m|[m[36m\[m [33m\[m [36m\[m  
+[35m|[m * [33m|[m [36m|[m [33m2433922[m Update deployment link.
+[35m|[m * [33m|[m [36m|[m [33m76207e7[m dashboard header
+[35m|[m * [33m|[m [36m|[m   [33m557dd87[m Merge pull request #6 from rolteame/master
+[35m|[m [1;31m|[m[36m\[m [33m\[m [36m\[m  
+[35m|[m [1;31m|[m [36m|[m [33m|[m[36m/[m  
+[35m|[m [1;31m|[m [36m|[m[36m/[m[33m|[m   
+* [1;31m|[m [36m|[m [33m|[m   [33m001c919[m Merge branch 'master' of https://github.com/rolteame/project-management-tool-1 into master
+[1;33m|[m[1;34m\[m [1;31m\[m [36m\[m [33m\[m  
+[1;33m|[m * [1;31m\[m [36m\[m [33m\[m   [33m38957c1[m Merge pull request #2 from bankymono/master
+[1;33m|[m [36m|[m[1;36m\[m [1;31m\[m [36m\[m [33m\[m  
+[1;33m|[m [36m|[m [1;36m|[m[36m_[m[1;31m|[m[36m/[m [33m/[m  
+[1;33m|[m [36m|[m[36m/[m[1;36m|[m [1;31m|[m [33m|[m   
+[1;33m|[m [36m|[m * [1;31m|[m [33m|[m [33m19d67f4[m designed the settings page.
+[1;33m|[m [36m|[m[36m/[m [1;31m/[m [33m/[m  
+* [36m/[m [1;31m/[m [33m/[m [33m1dfc05c[m activities page design
+[36m|[m[36m/[m [1;31m/[m [33m/[m  
+* [1;31m|[m [33m|[m [33m665ec7a[m corrections
+* [1;31m|[m [33m|[m [33mb834af3[m corrections
+* [1;31m|[m [33m|[m [33m71ad937[m login changes
+* [1;31m|[m [33m|[m [33m346d541[m Merge https://github.com/nazeeeh/project-management-tool into master
+[31m|[m[1;31m\[m[1;31m|[m [33m|[m 
+[31m|[m * [33m|[m [33m6345fb0[m Navigation Bar
+[31m|[m * [33m|[m [33m9588911[m addded google button to register and login pages
+[31m|[m * [33m|[m [33m050a20f[m Reduced the sizes of the cards on the pricing page
+[31m|[m * [33m|[m   [33m40ed713[m Merge pull request #5 from rolteame/master
+[31m|[m [33m|[m[34m\[m [33m\[m  
+[31m|[m * [34m\[m [33m\[m   [33mac19d9e[m Merge pull request #4 from rolteame/master
+[31m|[m [35m|[m[36m\[m [34m\[m [33m\[m  
+* [35m|[m [36m\[m [34m\[m [33m\[m   [33m7d2e1fe[m Merge branch 'master' of https://github.com/rolteame/project-management-tool-1 into master
+[1;31m|[m[34m\[m [35m\[m [36m\[m [34m\[m [33m\[m  
+[1;31m|[m [34m|[m [35m|[m[34m_[m[36m|[m[34m/[m [33m/[m  
+[1;31m|[m [34m|[m[34m/[m[35m|[m [36m|[m [33m|[m   
+[1;31m|[m * [35m|[m [36m|[m [33m|[m   [33m60a5fd6[m Merge pull request #1 from eonyedikachi/master
+[1;31m|[m [1;33m|[m[33m\[m [35m\[m [36m\[m [33m\[m  
+[1;31m|[m [1;33m|[m [33m|[m [35m|[m[33m_[m[36m|[m[33m/[m  
+[1;31m|[m [1;33m|[m [33m|[m[33m/[m[35m|[m [36m|[m   
+[1;31m|[m [1;33m|[m * [35m|[m [36m|[m [33mcc55fda[m Update login.html
+[1;31m|[m [1;33m|[m * [35m|[m [36m|[m [33mc2d0e30[m Rename reset.html to reset-password.html
+[1;31m|[m [1;33m|[m * [35m|[m [36m|[m [33m971c5d2[m Update and rename forgot.html to forgot-password.html
+[1;31m|[m [1;33m|[m[1;33m/[m [35m/[m [36m/[m  
+* [1;33m/[m [35m/[m [36m/[m [33m9930d73[m NEW MINOR CHANGES
+[1;33m|[m[1;33m/[m [35m/[m [36m/[m  
+* [35m|[m [36m/[m [33m2d7d09d[m edits and adding new pages
+[36m|[m [35m|[m[36m/[m  
+[36m|[m[36m/[m[35m|[m   
+* [35m|[m [33m2f632b2[m Update index.html
+* [35m|[m [33m4d2f6fd[m Update index.html
+* [35m|[m [33mc0c2935[m Update about.css
+* [35m|[m [33m257af11[m Update about.html
+[35m|[m[35m/[m  
+* [33m51f854b[m making final edits
+* [33mb27a3d6[m contact page
+* [33m6e52907[m adding signup.html to navigation
+*   [33m5e39635[m Merge branch 'master' of https://github.com/nazeeeh/project-management-tool into master
+[1;35m|[m[1;36m\[m  
+[1;35m|[m * [33me02b732[m concluding styling of the pricing page
+[1;35m|[m * [33m75b5b66[m styled the pricing page
+* [1;36m|[m [33m1514a0f[m Signup page and mobile responsiveness tweaks
+[1;36m|[m[1;36m/[m  
+* [33m1dc75f8[m Update index.html
+* [33ma23e6c8[m minor changes
+*   [33mc9babdd[m Merge branch 'master' of https://github.com/nazeeeh/project-management-tool into master
+[31m|[m[32m\[m  
+[31m|[m *   [33m822bc9f[m Merge branch 'master' of https://github.com/nazeeeh/project-management-tool into master
+[31m|[m [33m|[m[34m\[m  
+[31m|[m * [34m|[m [33m3c3be0b[m updated pricing page
+* [34m|[m [34m|[m [33m7940621[m making changes
+* [34m|[m [34m|[m [33mb216367[m file system
+[34m|[m [34m|[m[34m/[m  
+[34m|[m[34m/[m[34m|[m   
+* [34m|[m   [33m2328a8a[m Merge branch 'master' of https://github.com/nazeeeh/project-management-tool into master
+[35m|[m[36m\[m [34m\[m  
+[35m|[m * [34m|[m [33m5996b03[m Update README.md
+* [36m|[m [34m|[m [33m242764a[m tablet view
+* [36m|[m [34m|[m [33m43ecaf5[m 425px screen view
+* [36m|[m [34m|[m [33maae7fd3[m button transition
+* [36m|[m [34m|[m [33m3a666ca[m button hober state edit
+[36m|[m[36m/[m [34m/[m  
+* [34m|[m [33m8387d0a[m final design landing page-rotimi
+* [34m|[m   [33mb604efe[m Merge pull request #3 from nazeeeh/Chidinma
+[1;31m|[m[1;32m\[m [34m\[m  
+[1;31m|[m * [34m|[m [33m5f630dc[m[33m ([m[1;31mupstream/Chidinma[m[33m, [m[1;31morigin/Chidinma[m[33m)[m navbar updated
+* [1;32m|[m [34m|[m [33m63e161a[m Merge pull request #2 from nazeeeh/Chidinma
+[1;33m|[m[1;32m\[m[1;32m|[m [34m|[m 
+[1;33m|[m * [34m|[m [33m0cee836[m  complete navbar section
+* [1;34m|[m [34m|[m [33m16c28cc[m Merge pull request #1 from nazeeeh/Chidinma
+[34m|[m[1;34m\[m[1;34m|[m [34m|[m 
+[34m|[m [1;34m|[m[34m/[m  
+[34m|[m[34m/[m[1;34m|[m   
+[34m|[m * [33me67157e[m Navbar section
+* [1;36m|[m [33m10bf9ed[m created pricing page structure
+[1;36m|[m[1;36m/[m  
+* [33m3faffde[m[33m ([m[1;31mupstream/production[m[33m, [m[1;31morigin/production[m[33m)[m updated Readme.md
+* [33mb04c19e[m initial stage of project v0.1

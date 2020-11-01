@@ -104,17 +104,23 @@
     </div>
       <!-- navbar -->
       <nav class="navbar navbar-light bg-light flex-md-nowrap fixed-top  p-0 shadow-sm">
-        <div class="">
-          <div class="row">
+        <div class="offset-lg-1 col-12">
+          <div class="row offset-lg-6">
             
-            <ul class="navbar-nav px-3">
+            <ul class="navbar-nav px-3 d-flex flex-row justify-content-end">
               <div class="d-flex flex-row justify-content-end">
-                  <!-- <span class="fas fa-search form-control-feedback"></span> -->
-                  <input type="text" placeholder="Search..." class="form-control search"></input>
+                <!-- <span class="fas fa-search form-control-feedback"></span> -->
                 
-                <img src="../../assets/img/Onyedika.jpg" alt="Team member" class="picture">
-                <img src="../../assets/img/Chidinma.jpg" alt="Team member" class="picture">
-                <img src="../../assets/img/Sophia.jpg" alt="Team member" class="picture">
+                
+                <div id="team-images">
+                  
+                 <!-- <img src="../../assets/img/Onyedika.jpg" alt="Team member" class="picture">
+                  <img src="../../assets/img/Chidinma.jpg" alt="Team member" class="picture"> -->
+                  <!-- <img src="../../assets/img/Sophia.jpg" alt="Team member" class="picture"> -->
+                  <!-- <img src="../../assets/img/Chidinma.jpg" alt="Team member" class="picture"> -->
+                  
+                </div>
+                <input type="text" placeholder="Search..." class="mr-5 form-control search"></input>
               <button class="nav-btn badge badge-pill"><a  href="chat.html"><i class="fa fa-comments" >Chat</i></a></button>
               <button class="nav-btn badge badge-pill"><a  href="share.html"><i class="fa fa-comments" >Share</i></a></button>
               
@@ -129,15 +135,15 @@
               </li> -->
             </ul>
           </div>
-          <ul class="nav flex-row offset-lg-2 offset-sm-0">
+          <ul class="nav flex-row offset-lg-1 offset-sm-0">
             <li class="nav-item">
-              <a class="nav-link hover-border-bottom " href="./temp.html">Home</a>
+              <a class="nav-link hover-border-bottom active" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link hover-border-bottom" href="activities.html">Activities</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hover-border-bottom active" href="#">Calender</a>
+              <a class="nav-link hover-border-bottom" href="calender.html">Calender</a>
             </li>
             <li class="nav-item">
               <a class="nav-link hover-border-bottom" href="#">Files</a>
@@ -163,7 +169,7 @@
             </a>
             <div class="d-flex justify-content-around">
               <div class="profile mt-2 ">
-                <img id="theAvatar" src="../../assets/img/Sophia.jpg" alt="Avatar" class="avatar my-2"></img>
+                <img id="Avatar" src="" alt="Avatar" class="avatar my-2"></img>
                 <div class="profile-info-group">
                   <p class="profile-name mb-0" id="userName"></p>
                   <small class="profile-info primary-options-color text-wrap" id="userRole"></small>
@@ -172,7 +178,7 @@
                 <li class="dropdown"><a class="dropdown-toggle ml-3" data-toggle="dropdown" href="#" id="DropdownProfile">...</a>
                   <ul class="dropdown-menu">
                     <li class="mx-2 text-decoration-none" ><a style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalLong"  class="text-black" onclick=editTrigger()>Profile settings</a></li>
-                    <li class="mx-2 text-decoration-none"><a class="text-black" onclick="logout()">Log Out</a></li>
+                    <li class="mx-2 text-decoration-none"><a style="cursor: pointer;" class="text-black" onclick="logout()">Log Out</a></li>
                   </ul>
                 </li>
               </span>
@@ -292,9 +298,11 @@
 
     <script src="../../assets/js/Controllers/user.js"></script>
   <!-- <script src="../../assets/js/Controller/project.js"></script> -->
+  <script src="../../assets/js/Controllers/project.js"></script>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="../../assets/js/Controllers/team.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>

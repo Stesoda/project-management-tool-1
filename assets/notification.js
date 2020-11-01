@@ -1,34 +1,24 @@
-let tasks = [
-    {
-      taskName: "web house",
-      assignTo: "Chi",
-      taskDescription: "build a web house",
-      dueDate: "2 April",
-    },
-    {
-        taskName: "Footer-bar",
-        assignTo: "Chi",
-        taskDescription: "Build a footer-bar",
-        dueDate: "22nd April",
-      },
+// tasks = localStorage.getItem("tasksLists");
+// document.getElementById("notify").innerHTML = tasks
+// task[0].name
+const Task = JSON.parse(localStorage.getItem("tasksLists"));
+const Notification = JSON.parse(localStorage.getItem("Notification"));
+if (Notification == null || Notification == undefined) {
+  Notification = [];
+}
 
-  ];
-  displayTasks();
-  // Display profile function
-  function displayTasks() {
-    content = "";
-    for (i = 0; i < tasks.length; i++) {
-      if (tasks != null || tasks != undefined) {
-        content += `<div class = "view-task">
-      <strong>Task Name</strong> : ${tasks[i].taskName}
-      <strong>Assign To</strong> : ${tasks[i].assignTo}
-      <strong>Due Date </strong> : ${tasks[i]. dueDate}
-      <a href "#"  class="view" >View</a>
-      </div><hr>`;
-      }
-    }
-    document.getElementById("view-tasks").innerHTML = content;
+// function displayTask() {
+//   let  notify = "";
+//     for (i = 0; i < task.length; i++) {
+//       if (task != null || task != undefined) {
+//         notify += `<div>
+//             <strong>Name</strong> : ${task[i].name}
+//         </div> `;
+//       }
+//     }
+//     document.getElementById("notify").innerHTML = notify
 
-    tasks = JSON.parse(localStorage.getItem("tasks"));
-    
-  }
+//   }
+//   displayTask()
+
+function saveNotification() {}

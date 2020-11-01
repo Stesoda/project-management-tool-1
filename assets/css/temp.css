@@ -51,6 +51,14 @@ nav.navbar {
   height: 35px;
 }
 
+.circle {
+  background-color: #ffc200;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
 .nav-btn {
   margin-top: 19px;
   margin-right: 12px;
