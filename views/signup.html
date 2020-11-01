@@ -109,8 +109,8 @@
 
                 <div class="text-center mb-3">
                   <button
-                    type="button"
-                    class="btn blue-gradient btn-block btn-rounded z-depth-1a bt-primary"
+                    type="button" style="background: #0099cc; color: white;"
+                    class="btn btn-block btn-rounded z-depth-1a bt-primary"
                     onclick="login()"
                   >
                     Sign in
@@ -167,7 +167,7 @@
             </label>
             <label class="logo"
               ><a href="../index.html"
-                ><span class="text-primary">BAS</span
+                ><span style="color: #0099cc;">BAS</span
                 ><span class="logo-text">COM</span></a
               ></label
             >
@@ -202,6 +202,54 @@
             </div>
           </div>
           <form action="" class="mt-0">
+            <label for="firstName" class="font-weight-bold">First Name:</label>
+            <input
+              id="firstName" class="form-control py-3"
+              type="text"
+              placeholder="Enter Your First Name"
+              name="firstName"
+              required
+            />
+            <label for="lastName" class="font-weight-bold">Last Name:</label>
+            <input
+              id="lastName" class="form-control py-3"
+              type="text"
+              placeholder="Enter Your Last Name"
+              name="firstName"
+              required
+            />
+            <label for="role" class="font-weight-bold">Role:</label>
+            <input
+              id="role" class="form-control py-3"
+              type="text"
+              placeholder="Enter Your Job Role"
+              name="firstName"
+              required
+            />
+            <label for="email" class="font-weight-bold">Email:</label>
+            <input
+              id="email" class="form-control py-3"
+              type="email"
+              placeholder="Enter Email Address"
+              name="email"
+              required
+            />
+            <label for="password" class="font-weight-bold">Password:</label>
+            <input
+              id="password" class="form-control py-3"
+              type="password"
+              placeholder="Enter Password"
+              name="password"
+              required
+            />
+            <label for="retypePassword" class="font-weight-bold">Retype Password:</label>
+            <input
+              id="retypePassword"
+              type="password" class="form-control py-3 font-weight-light"
+              placeholder="Enter Password Again"
+              name="retypePassword"
+              required
+            />
             <small class="font-weight-normal">
               <div class="form-check d-flex flex-row">
                 <input class="form-check-input position-relative col-1" type="checkbox" value="" id="defaultCheck1" required>
@@ -211,55 +259,6 @@
               </div>
               
             </small>
-            <label for="firstName">First Name:</label>
-            <input
-              id="firstName" class="form-control py-3"
-              type="text"
-              placeholder="Enter Your First Name"
-              name="firstName"
-              required
-            />
-            <label for="lastName">Last Name:</label>
-            <input
-              id="lastName" class="form-control py-3"
-              type="text"
-              placeholder="Enter Your Last Name"
-              name="firstName"
-              required
-            />
-            <label for="role">Role:</label>
-            <input
-              id="role" class="form-control py-3"
-              type="text"
-              placeholder="Enter Your Job Role"
-              name="firstName"
-              required
-            />
-            <label for="email">Email:</label>
-            <input
-              id="email" class="form-control py-3"
-              type="email"
-              placeholder="Enter Email Address"
-              name="email"
-              required
-            />
-            <label for="password">Password:</label>
-            <input
-              id="password" class="form-control py-3"
-              type="password"
-              placeholder="Enter Password"
-              name="password"
-              required
-            />
-            <label for="retypePassword">Retype Password:</label>
-            <input
-              id="retypePassword"
-              type="password" class="form-control py-3"
-              placeholder="Enter Password Again"
-              name="retypePassword"
-              required
-            />
-            
             <small class="text-right my-2">
               Already have an Acccount?
               <a class="login-link"
@@ -272,8 +271,8 @@
   
             <div class="text-center mb-3">
               <button
-                type="button"
-                class="btn blue-gradient btn-block btn-rounded z-depth-1a bt-primary"
+                type="button" style="background: #0099cc; color: white;"
+                class="btn btn-block btn-rounded z-depth-1a bt-primary"
                 onclick="register()"
               >
                 Sign up

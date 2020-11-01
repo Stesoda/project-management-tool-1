@@ -3,15 +3,15 @@
 <head>
 	<meta charset="UTF-8">
   <title>Side Navigation Bar</title>
-  <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css"> -->
     <link rel="stylesheet" href="../../assets/css/sidebar.css">
     <link rel="stylesheet" href="../../assets/css/Dashboard.css">  
-    <link rel="tyle.sheet" href="../../assets/css/activities.css">
+    <link rel="style.sheet" href="../../assets/css/activities.css">
     <link rel="stylesheet" href="../../assets/css/usermgt.css">
     <link rel="stylesheet" href="../../assets/css/managemetconsole/mngtlogin.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-  <script src="../../assets/js/Controller/activites.js"></script>
+  <!-- <script src="../../assets/js/Controller/activites.js"></script> -->
   
 </head>
 <body>
@@ -29,8 +29,8 @@
           <div class="profile mt-2 ">
             <img src="../../assets/img/Sophia.jpg" alt="Avatar" class="avatar"></img>
             <div class="profile-info-group">
-              <p class="profile-name mb-0" id="profileName">Diogu Maxwell</p>
-              <h6 class="profile-info primary-options-color">CTO</h6>
+              <p class="profile-name mb-0" id="profileName"></p>
+              <h6 class="profile-info primary-options-color" id="profileRole"></h6>
             </div>
           </div>
     
@@ -216,6 +216,12 @@
               name="password"
               required
             />
+            <label for="status">Status</label>
+            <select class="form-control py-3" id="status">
+              <option selected>Choose...</option>
+              <option value="Enable">Enable</option>
+              <option value="Disable">Disable</option>
+            </select>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -278,6 +284,12 @@
               name="password"
               required
             />
+            <label for="status">Status</label>
+            <select class="form-control custom-select py-3" id="editstatus">
+              <option selected>Choose...</option>
+              <option value="Enable">Enable</option>
+              <option value="Disable">Disable</option>
+            </select>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -320,8 +332,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="../../assets/js/Controllers/mngtlogin.js/mngtlogin.js"></script>
-  <script src="../../assets/js/web/routes.js"></script>
-  <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../assets/js/Controllers/mngtlogin/mngtlogin.js"></script>
+  <!-- <script src="../../assets/js/web/routes.js"></script> -->
+  <!-- <script src="../../js/bootstrap/bootstrap.min.js"></script> -->
 </body>.
 </html>
