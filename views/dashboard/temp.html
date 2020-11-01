@@ -74,6 +74,8 @@
                   id="projectDescription"
                 ></textarea>
               </div>
+
+              <!-- team list dropdown -->
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label"
                   >Team</label
@@ -110,7 +112,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title text-default-color" id="staticBackdropLabel">
-              Add Project
+             Create a Team 
             </h5>
             <button
               type="button"
@@ -161,9 +163,10 @@
     </div>
       <!-- ######################[  NAVBAR STARTS HERE    ]########################### -->
       <nav class="navbar navbar-light bg-light flex-md-nowrap fixed-top  p-0 shadow-sm">
-        <div class="">
-          <div class="row">
+        <div class="offset-lg-1 col-12">
+          <div class="row offset-lg-6">
             
+<<<<<<< HEAD
             <ul class="navbar-nav px-3">
               <div class="d-flex flex-row justify-content-end" id="team-members">
                   <!-- <span class="fas fa-search form-control-feedback"></span> -->
@@ -176,6 +179,25 @@
                 <img src="../../assets/img/Chidinma.jpg" alt="Team member" class="picture">
                 
                 </div>
+=======
+            <ul class="navbar-nav px-3 d-flex flex-row justify-content-end">
+              <div class="d-flex flex-row justify-content-end">
+                <!-- <span class="fas fa-search form-control-feedback"></span> -->
+                
+                
+                <div id="team-images">
+                  
+                  <!-- <img src="../../assets/img/Onyedika.jpg" alt="Team member" class="picture">
+                  <img src="../../assets/img/Chidinma.jpg" alt="Team member" class="picture">
+                  <!-- <img src="../../assets/img/Sophia.jpg" alt="Team member" class="picture"> -->
+                  <img src="../../assets/img/Chidinma.jpg" alt="Team member" class="picture">
+                   -->
+                </div>
+                <div>
+                  <input type="text" placeholder="Search..." class="mr-5 form-control search" name ="search" id="search" autocomplete="off"/>
+                      <ul class="list-group" id="searchList" style="border-radius: 50%; position: absolute;"></ul> 
+                  </div>
+>>>>>>> 9d89c46b880c8faafb348121bcbee88576b1637b
               <button class="nav-btn badge badge-pill"><a  href="chat.html"><i class="fa fa-comments" >Chat</i></a></button>
               <button class="nav-btn badge badge-pill"><a  href="share.html"><i class="fa fa-comments" >Share</i></a></button>
               
@@ -190,12 +212,12 @@
               </li> -->
             </ul>
           </div>
-          <ul class="nav flex-row offset-lg-2 offset-sm-0">
+          <ul class="nav flex-row offset-lg-1 offset-sm-0">
             <li class="nav-item">
               <a class="nav-link hover-border-bottom active" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hover-border-bottom" href="activities.html">Activities</a>
+              <a class="nav-link hover-border-bottom" href="activities.html">Activities <span id="notifyCount" class="badge badge-info"></span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link hover-border-bottom" href="calender.html">Calender</a>
@@ -224,7 +246,7 @@
             </a>
             <div class="d-flex justify-content-around">
               <div class="profile mt-2 ">
-                <img id="theAvatar" src="../../assets/img/Sophia.jpg" alt="Avatar" class="avatar my-2"></img>
+                <img id="theAvatar" src="" alt="Avatar" class="avatar my-2"></img>
                 <div class="profile-info-group">
                   <p class="profile-name mb-0" id="userName"></p>
                   <small class="profile-info primary-options-color text-wrap" id="userRole"></small>
@@ -248,17 +270,22 @@
                   <a class="nav-link text-white hover-color" href="taskoverview.html"><i class="fas fa-tasks"></i>Tasks</a>
                 </li>
                 <li class="nav-item hover-color">
-                  <a class="nav-link text-white " href="notification.html"><i class="fas fa-bell"></i>Notification</a>
+                  <a class="nav-link text-white " href="/views/dashboard/activities.html"><i class="fas fa-bell"></i>Notification</a>
                 </li>
                 
               </ul>
             </div>
-            <div class="overflow-auto">
+            <div style="overflow-y: auto; max-height: min-content;">
               <div class="project-teams">
                 <a class="menu-header text-white px-2 py-2 cursor-pointer d-flex flex-row justify-content-between " data-toggle="collapse" data-target="#projects" aria-expanded="false" aria-controls="collapseExample">Projects <i class="fas fa-caret-down"></i></a>
               </div>
+<<<<<<< HEAD
               <div class="collapse" id="projecsts">
                 <ul class="nav flex-column">
+=======
+              <div class="collapse" id="projects">
+                <ul class="nav flex-column ">
+>>>>>>> 9d89c46b880c8faafb348121bcbee88576b1637b
                   <div id="projectsSidebar">
 
                   </div>
@@ -342,7 +369,7 @@
                     </button>
                   </div>
                   <hr />
-                  <div id="showAllProjects" class="d-flex"></div>
+                  <div id="showAllProjects" class="d-flex flex-wrap"></div>
                 </div>
               </section>
             
@@ -400,6 +427,7 @@
 
     <script src="../../assets/js/Controllers/user.js"></script>
   <script src="../../assets/js/Controllers/project.js"></script>
+  <script src="../../assets/js/search.js"></script>
   
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="../../assets/js/Controllers/team.js"></script>

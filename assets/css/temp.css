@@ -51,6 +51,7 @@ nav.navbar {
   height: 35px;
 }
 
+<<<<<<< HEAD
 .circle::before{
 
 }
@@ -59,6 +60,14 @@ nav.navbar {
 background-color: coral;
 
 
+=======
+.circle {
+  background-color: #ffc200;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+>>>>>>> 9d89c46b880c8faafb348121bcbee88576b1637b
 }
 
 .nav-btn {

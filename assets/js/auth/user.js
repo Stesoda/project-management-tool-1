@@ -85,6 +85,7 @@ function register() {
           email: userEmail,
           password: userPassword,
           role: role,
+          status: "Enable",
         };
 
         passEmail = userEmail;
@@ -100,7 +101,7 @@ function register() {
         localStorage.setItem("users", JSON.stringify(users));
         localStorage.setItem("activeUsers", JSON.stringify(activeUsers));
         localStorage.setItem("saveDetails", JSON.stringify(activeUsers));
-
+        alert(users.status)
         location.href = dasboardHome;
         localStorage.setItem("currentUser", JSON.stringify(newUser));
         Swal.fire({
@@ -170,6 +171,8 @@ function continueSignup(e) {
 function login() {
   var userEmail = document.getElementById("loginEmail").value;
   let userPassword = document.getElementById("loginPassword").value;
+  status = users.status;
+  alert(status)
 
   let userExist = users.find((user) => userEmail == user.email);
   let passwordExist = users.find((user) => userPassword === user.password);
@@ -181,6 +184,14 @@ function login() {
       timer: 2000,
     });
   } else if (userExist && passwordExist) {
+    if(users.status == "Disable") {
+      Swal.fire({
+        icon: "error",
+        title: "Sorry, this account has been deactivated, contact your Administrator.",
+        showConfirmButton: false,
+        timer: 2000,
+      });
+    }else {
     activeUsers.push(token);
 
     Swal.fire({
@@ -198,6 +209,7 @@ function login() {
     localStorage.setItem("activeUsers", JSON.stringify(activeUsers));
 
     localStorage.setItem("currentUser", JSON.stringify(userExist));
+    }
   } else if (userExist == undefined || passwordExist == undefined) {
     let error = "Wrong Email and/or Password";
     Swal.fire({
